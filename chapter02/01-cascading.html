@@ -1,0 +1,15 @@
+{{/* 詳細度 example ID （`#my-id`)のみ適用され、Class Selector（ex. my-class01,
+my-class02... ) は適用されない。 */}}
+
+<p id="my-id" class="my-class01 my-class02 my-class03 my-class04 my-class05">
+  Lorem ipsum
+</p>
+
+<style>
+  #my-id {
+    font-size: 4rem;
+  }
+  .my-class01.my-class02.my-class03.my-class04.my-class05 {
+    font-size: 3rem;
+  }
+</style>
