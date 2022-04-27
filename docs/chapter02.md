@@ -120,10 +120,32 @@ Reset CSS について、Hard reset 系 CSS, normalize rest 系 CSS を紹介し
 ## CSS 設計の実績と 8 つの Point
 
 - 特性に応じて CSS を分類する
-- Content と Styling が蘇結合である
+  - この方法は `SMACSS`, `PRECSS` で採用されています
+- Content と Styling が疎結合である
 - 影響範囲がみだりに広すぎない
 - 特定の context にみだりに依存していない
 - 詳細度がみだりに高くない
 - Class 名から影響範囲が想像できる
 - Class 名から見た目・機能・役割が想像できる
 - 拡張しやすい
+
+### 特性に応じて CSS を分類する
+
+- Base group
+  - Site 全体に適用される style
+- Layout group
+  - Layout に関する Style
+- Module group
+  - site 内全体で使いまわしたいもの
+  - **module 事態には layout に関する指定は基本的に行わないことが、best practice になります**
+    - 「layout に関する指定」 とは、具体的に以下のようなものがあります。
+      - `position` (static, relative を除く)
+      - `z-index`
+      - `top` / `right` / `bottom` / `left`
+      - `float`
+      - `width`
+      - `margin`
+
+### Content と Styling が疎結合である
+
+- HTML の要素名をなるべく selector にとして使用しないようにするのが best practice です。例えば今までが div 洋装だったものが、何らかの都合で p 要素になったりすると、div 要素に対して設定していた style が適用されなくなってしまうためです。

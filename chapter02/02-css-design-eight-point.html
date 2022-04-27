@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="" />
   </head>
   <body>
-    <article id="main">
-      <div class="module main-module">
+    <article id="main" class="ly_cont">
+      <div class="bl_module main-module">
         <figure>
           <img
             src="/assets/img/elements/persona.jpg"
@@ -23,12 +23,12 @@
         </figure>
 
         <div>
-          <h2>ユーザーを考えた設計で満足な体験を</h2>
+          <h2 class="title">ユーザーを考えた設計で満足な体験を</h2>
           <p>
             提供するサービスやペルソナによって、webサイトの設計は異なります。サービスやペルソナに合わせた設計を行うことにより、訪問者にストレスのないよりよい体験を生み出し、満足を高めることとなります。<br />わたしたちはお客さまのサイトに合ったユーザビリティを考えるため、分析やヒアリングをきめ細かく実施、満足を体験できるクリエイティブとテクノロジーを設計・構築し、今までにない期待を超えたユーザー体験を提供いたします。
           </p>
 
-          <h3>ペルソナとは？</h3>
+          <h3 class="sub-title">ペルソナとは？</h3>
           <span>
             自社商品、サービスの理想的・象徴的な顧客像のこと。アプローチする対象を明確にすることで、効率的なマーケティング施策を行うことが可能となります。
           </span>
@@ -41,19 +41,39 @@
 </html>
 
 <style>
-  #main span {
-    color: #555;
-    font-size: 14px;
+  /* Base group */
+  /* 
+    ## Basic group
+    Site 内共通であるべきのも
+    Site の base となって欲しいもの
+  */
+  body {
+    font-family: sans-serif;
   }
 
-  #main dev.module.main-module {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Layout group */
+  .ly_cont {
     /* 左右中央揃えのための指定 */
     max-width: 1200px;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+  }
 
+  /* Module group */
+
+  #main span {
+    color: #555;
+    font-size: 14px;
+  }
+
+  #main .bl_module.main-module {
     /* module に対する指定*/
     display: flex;
     align-items: center;
@@ -62,27 +82,27 @@
     line-height: 1.5;
   }
 
-  #main div.module.main-module figure {
+  #main .bl_module.main-module figure {
     flex: 1 1 25%;
     margin-right: 3.33333%;
   }
 
-  #main div.module.main-module img {
+  #main .bl_module.main-module img {
     width: 100%;
     vertical-align: top;
   }
 
-  #main div.module.main-module div {
+  #main .bl_module.main-module div {
     flex: 1 1 68.3333%;
   }
 
-  #main div.module.main-module h2 {
+  #main .bl_module.main-module title {
     margin-bottom: 10px;
     font-size: 18px;
     font-weight: bold;
   }
 
-  #main div.module.main-module h3 {
+  #main .bl_module.main-module sub-title {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 16px;
