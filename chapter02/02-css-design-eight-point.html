@@ -107,4 +107,15 @@
     font-size: 16px;
     border-bottom: 1px solid #555;
   }
+
+  /* 
+    疎結合でない他の Pattern 
+    属性 selector の特定の値を使用して styling することは、基本的には避けるべきです。
+  */
+
+  a[href="https://google.co.jp"],
+  a[href="https://yahoo.co.jp"]
+  {
+    color: red;
+  }
 </style>
