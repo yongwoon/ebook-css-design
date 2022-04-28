@@ -155,3 +155,5 @@ Reset CSS について、Hard reset 系 CSS, normalize rest 系 CSS を紹介し
 - HTML の要素名をなるべく selector にとして使用しないようにするのが best practice です。例えば今までが div 洋装だったものが、何らかの都合で p 要素になったりすると、div 要素に対して設定していた style が適用されなくなってしまうためです。
 
 ### 影響範囲がみだりに広すぎない
+
+### 特定の context にみだりに依存していない
