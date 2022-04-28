@@ -67,11 +67,6 @@
   }
 
   /* Module group */
-  #main span {
-    color: #555;
-    font-size: 14px;
-  }
-
   #main .bl_module.main-module {
     /* module に対する指定*/
     display: flex;
@@ -108,11 +103,15 @@
     border-bottom: 1px solid #555;
   }
 
+  #main .bl_module.main-module .body > span {
+    color: #555;
+    font-size: 14px;
+  }
+
   /* 
     疎結合でない他の Pattern 
     属性 selector の特定の値を使用して styling することは、基本的には避けるべきです。
   */
-
   a[href="https://google.co.jp"],
   a[href="https://yahoo.co.jp"]
   {
