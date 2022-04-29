@@ -178,3 +178,20 @@ Reset CSS について、Hard reset 系 CSS, normalize rest 系 CSS を紹介し
 「Module の子要素には、Module の root 要素の class 名を継承させる」 ようにする。
 
 ### Class 名から見た目・機能・役割が想像できる
+
+使い回しを前提とした module に対する最適な命名とはつまり
+
+1. context ではなく、見た目・機能・役割を Base とし
+2. media, accordion, slider など、一般的な名称を使用する
+
+### 拡張しやすい
+
+- 拡張しやすい Class 設計を行う(multi-class 設計を採用する)
+- 拡張用として作成した class は、機能・役割に応じて適切な粒度・影響範囲も持つ
+
+#### Single class VS multi class
+
+- single class の demerit
+  - それぞれの button の box-shadow がないバターン
+  - shadow はあり、文字色が白黒反転した pattern
+  - shadow はなく、文字色も判定した pattern

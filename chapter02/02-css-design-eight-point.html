@@ -14,15 +14,15 @@
   </head>
   <body>
     <article id="main" class="ly_cont">
-      <div class="bl_module main-module">
-        <figure class="bl_media_imageWrapper">
+      <div class="bl_media bl_media__rev">
+        <figure class="bl_media_imageWrapper bl_media_imageWrapper__rev">
           <img
             src="/assets/img/elements/persona.jpg"
             alt="写真: 手にもたれたスマホ"
           />
         </figure>
 
-        <div class="bl_media_body">
+        <div class="bl_media_body bl_media_body__rev">
           <h2 class="bl_media_title">ユーザーを考えた設計で満足な体験を</h2>
           <p>
             提供するサービスやペルソナによって、webサイトの設計は異なります。サービスやペルソナに合わせた設計を行うことにより、訪問者にストレスのないよりよい体験を生み出し、満足を高めることとなります。<br />わたしたちはお客さまのサイトに合ったユーザビリティを考えるため、分析やヒアリングをきめ細かく実施、満足を体験できるクリエイティブとテクノロジーを設計・構築し、今までにない期待を超えたユーザー体験を提供いたします。
@@ -67,7 +67,7 @@
   }
 
   /* Module group */
-  .bl_module {
+  .bl_media {
     /* module に対する指定*/
     display: flex;
     align-items: center;
@@ -87,6 +87,19 @@
 
   .bl_media_body {
     flex: 1 1 68.3333%;
+  }
+
+  .bl_media__rev {
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+
+  .bl_media_imageWrapper__rev {
+    margin-right: 0;
+  }
+
+  .bl_media_body__rev {
+    margin-right: 3.33333%;
   }
 
   .bl_media_title {
