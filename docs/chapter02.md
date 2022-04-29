@@ -157,3 +157,16 @@ Reset CSS について、Hard reset 系 CSS, normalize rest 系 CSS を紹介し
 ### 影響範囲がみだりに広すぎない
 
 ### 特定の context にみだりに依存していない
+
+### 詳細度がみだりに高くない
+
+詳細度が高い CSS は
+
+- Selector の見通しが悪くなりがち
+- 他の要素(親要素など)に対する依存が多くなりがち
+- 上書きが難しい
+- ゆえに maintenance の工数が増える
+
+実際に詳細度を低くするためのコツとしては、
+
+- Selector は class selector を使用する
