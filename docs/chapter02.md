@@ -195,3 +195,18 @@ Reset CSS について、Hard reset 系 CSS, normalize rest 系 CSS を紹介し
   - それぞれの button の box-shadow がないバターン
   - shadow はあり、文字色が白黒反転した pattern
   - shadow はなく、文字色も判定した pattern
+
+---
+
+## module の粒度を考える (2-6)
+
+- 「使いまわすことを前提としたひとかたまりの単位」を考える
+
+### module の粒度のばらつき(고르지 못한 분포)起こす問題
+
+### module 粒度の指針
+
+- 最小 module
+  - button, label, title などの simple な要素
+- 複合 ㅡㅐ여ㅣㄷ
+  - 幾つかの子要素をもつ、ほとかたまりの要素
