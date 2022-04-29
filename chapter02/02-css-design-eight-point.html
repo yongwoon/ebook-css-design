@@ -15,20 +15,20 @@
   <body>
     <article id="main" class="ly_cont">
       <div class="bl_module main-module">
-        <figure class="image-wrapper">
+        <figure class="bl_module_imageWrapper">
           <img
             src="/assets/img/elements/persona.jpg"
             alt="写真: 手にもたれたスマホ"
           />
         </figure>
 
-        <div class="body">
-          <h2 class="title">ユーザーを考えた設計で満足な体験を</h2>
+        <div class="bl_module_body">
+          <h2 class="bl_module_title">ユーザーを考えた設計で満足な体験を</h2>
           <p>
             提供するサービスやペルソナによって、webサイトの設計は異なります。サービスやペルソナに合わせた設計を行うことにより、訪問者にストレスのないよりよい体験を生み出し、満足を高めることとなります。<br />わたしたちはお客さまのサイトに合ったユーザビリティを考えるため、分析やヒアリングをきめ細かく実施、満足を体験できるクリエイティブとテクノロジーを設計・構築し、今までにない期待を超えたユーザー体験を提供いたします。
           </p>
 
-          <h3 class="sub-title">ペルソナとは？</h3>
+          <h3 class="subTitle">ペルソナとは？</h3>
           <span>
             自社商品、サービスの理想的・象徴的な顧客像のこと。アプローチする対象を明確にすることで、効率的なマーケティング施策を行うことが可能となります。
           </span>
@@ -71,41 +71,40 @@
     /* module に対する指定*/
     display: flex;
     align-items: center;
-    font-family: sans-srif;
     font-size: 16px;
     line-height: 1.5;
   }
 
-  .bl_module .image-wrapper {
+  .bl_module_imageWrapper {
     flex: 1 1 25%;
     margin-right: 3.33333%;
   }
 
-  bl_module .image-wrapper img {
+  .bl_module_imageWrapper img {
     width: 100%;
     vertical-align: top;
   }
 
-  bl_module .body {
+  .bl_module_body {
     flex: 1 1 68.3333%;
   }
 
-  bl_module .title {
+  .bl_module_title {
     margin-bottom: 10px;
     font-size: 18px;
     font-weight: bold;
   }
 
-  bl_module .sub-title {
+  .bl_module_body > span {
+    color: #555;
+    font-size: 14px;
+  }
+
+  .subTitle {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 16px;
     border-bottom: 1px solid #555;
-  }
-
-  bl_module .body > span {
-    color: #555;
-    font-size: 14px;
   }
 
   /* 

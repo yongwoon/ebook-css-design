@@ -170,3 +170,9 @@ Reset CSS について、Hard reset 系 CSS, normalize rest 系 CSS を紹介し
 実際に詳細度を低くするためのコツとしては、
 
 - Selector は class selector を使用する
+
+### Class 名から影響範囲が想像できる
+
+すなわち Class 名から影響範囲が想像できるようにするにはどうすれば良いかというと、
+
+「Module の子要素には、Module の root 要素の class 名を継承させる」 ようにする。
