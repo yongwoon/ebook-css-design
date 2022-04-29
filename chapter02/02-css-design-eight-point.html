@@ -15,7 +15,7 @@
   <body>
     <article id="main" class="ly_cont">
       <div class="bl_media bl_media__rev">
-        <figure class="bl_media_imageWrapper">
+        <figure class="bl_media_imageWrapper bl_media_imageWrapper__bordered">
           <img
             src="/assets/img/elements/persona.jpg"
             alt="写真: 手にもたれたスマホ"
@@ -96,6 +96,11 @@
 
   .bl_media__rev .bl_media_imageWrapper {
     margin-right: 0;
+  }
+
+  .bl_media_imageWrapper__bordered {
+    padding: 2px;
+    border: 1px solid #aaa;
   }
 
   .bl_media__rev .bl_media_body {
