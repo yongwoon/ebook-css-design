@@ -176,3 +176,5 @@ Reset CSS について、Hard reset 系 CSS, normalize rest 系 CSS を紹介し
 すなわち Class 名から影響範囲が想像できるようにするにはどうすれば良いかというと、
 
 「Module の子要素には、Module の root 要素の class 名を継承させる」 ようにする。
+
+### Class 名から見た目・機能・役割が想像できる
