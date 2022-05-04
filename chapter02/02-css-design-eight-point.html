@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <article id="main" class="ly_cont">
+      <div class="bl_media bl_media__rev">
+        <figure class="bl_media_imageWrapper bl_media_imageWrapper__bordered">
+          <img
+            src="/assets/img/elements/persona.jpg"
+            alt="写真: 手にもたれたスマホ"
+          />
+        </figure>
+
+        <div class="bl_media_body">
+          <h2 class="bl_media_title">ユーザーを考えた設計で満足な体験を</h2>
+          <p>
+            提供するサービスやペルソナによって、webサイトの設計は異なります。サービスやペルソナに合わせた設計を行うことにより、訪問者にストレスのないよりよい体験を生み出し、満足を高めることとなります。<br />わたしたちはお客さまのサイトに合ったユーザビリティを考えるため、分析やヒアリングをきめ細かく実施、満足を体験できるクリエイティブとテクノロジーを設計・構築し、今までにない期待を超えたユーザー体験を提供いたします。
+          </p>
+
+          <h3 class="subTitle">ペルソナとは？</h3>
+          <span>
+            自社商品、サービスの理想的・象徴的な顧客像のこと。アプローチする対象を明確にすることで、効率的なマーケティング施策を行うことが可能となります。
+          </span>
+        </div>
+      </div>
+    </article>
+
+    <script src="" async defer></script>
+  </body>
+</html>
+
+<style>
+  /* Base group */
+  /* 
+    ## Basic group
+    Site 内共通であるべきのも
+    Site の base となって欲しいもの
+  */
+  body {
+    font-family: sans-serif;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Layout group */
+  .ly_cont {
+    /* 左右中央揃えのための指定 */
+    max-width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  /* Module group */
+  .bl_media {
+    /* module に対する指定*/
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .bl_media_imageWrapper {
+    flex: 1 1 25%;
+    margin-right: 3.33333%;
+  }
+
+  .bl_media_imageWrapper img {
+    width: 100%;
+    vertical-align: top;
+  }
+
+  .bl_media_body {
+    flex: 1 1 68.3333%;
+  }
+
+  .bl_media__rev {
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+
+  .bl_media__rev .bl_media_imageWrapper {
+    margin-right: 0;
+  }
+
+  .bl_media_imageWrapper__bordered {
+    padding: 2px;
+    border: 1px solid #aaa;
+  }
+
+  .bl_media__rev .bl_media_body {
+    margin-right: 3.33333%;
+  }
+
+  .bl_media_title {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .bl_media_body > span {
+    color: #555;
+    font-size: 14px;
+  }
+
+  .subTitle {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-bottom: 1px solid #555;
+  }
+
+  /* 
+    疎結合でない他の Pattern 
+    属性 selector の特定の値を使用して styling することは、基本的には避けるべきです。
+  */
+  a[href="https://google.co.jp"],
+  a[href="https://yahoo.co.jp"]
+  {
+    color: red;
+  }
+</style>
