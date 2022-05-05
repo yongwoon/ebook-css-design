@@ -208,5 +208,5 @@ Reset CSS について、Hard reset 系 CSS, normalize rest 系 CSS を紹介し
 
 - 最小 module
   - button, label, title などの simple な要素
-- 複合 ㅡㅐ여ㅣㄷ
+- 複合 module
   - 幾つかの子要素をもつ、ほとかたまりの要素
