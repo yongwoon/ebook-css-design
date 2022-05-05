@@ -23,7 +23,13 @@
     - background
     - box-shadow
     - text-shadow
-- container と content の分離
+- container(area) と contents の分離
+  - module をなるべく特定の area に依存させない
+
+### sample code
+
+- `01-split-structure-skin`
+- `02-split-container-content`
 
 ### link
 
