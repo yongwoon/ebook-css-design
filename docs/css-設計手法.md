@@ -16,6 +16,10 @@
 
 - layouts
   - `l-`
+- theme
+  - `theme-`
+- state style
+  - `is-`
 
 ---
 
