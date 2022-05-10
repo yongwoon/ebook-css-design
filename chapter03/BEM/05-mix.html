@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <!-- MIX -->
+
+    <header class="head">
+      <div class="menu head__menu"></div>
+      <div class="logo head__logo"></div>
+      <div class="search head__search"></div>
+      <div class="auth head__auth"></div>
+    </header>
+
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+
+    <script src="" async defer></script>
+  </body>
+</html>
+
+<style>
+  /*
+    「.logo と .search の間に余白を空けたい」 という要件を Mix を使用して実現するには、
+    子(孫) selector を使用して実現するには、子(孫) selector を使用した .logo ではなく、
+    次のように .head__logo の方に styling します。
+
+    なぜこのようにするかというと、
+    - 単純になるべく詳細度を高めないためです。
+    - Block の再利用性が高められる
+    - Block の独立性が保たれる
+      - 例えば、logo block が万が一 .company-logo という Block 名に変わった場合、
+        前者の .logo styling をしている code は機能しなくなってしまいます。
+        しかし、.head_logo に styling している code は、logo block の名前が
+        .logo であろうと .company-logo であろうと関係ありません。
+  */
+
+  /* X .logo に styling をしている */
+  .head .logo {
+    margin-right: 30px;
+  }
+
+  /* O .head__logo に styling をしている */
+  .head_logo {
+    margin-right: 30px;
+  }
+</style>

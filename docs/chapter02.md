@@ -98,7 +98,7 @@ Reset CSS について、Hard reset 系 CSS, normalize rest 系 CSS を紹介し
 
 ## 英単語結合する方式の名前 (2-3)
 
-- hypen case (ex. `sub-title)
+- hyphen case (ex. `sub-title)
 - snake case (ex.`sub_title`)
 - camel case (ex.`subTitle`)
 - upper camel cas (ex.`SubTitle`)

@@ -8,6 +8,12 @@
 
 ## OOCSS
 
+### link
+
+- [oocss](http://oocss.org/)
+- [what-is-object-oriented-css](https://www.slideshare.net/stubbornella/what-is-object-oriented-css)
+- [object-oriented-css](https://www.slideshare.net/stubbornella/object-oriented-css)
+
 ---
 
 ## SMACSS
@@ -24,6 +30,12 @@
 ---
 
 ## BEM
+
+### Link
+
+- [BEM](https://en.bem.info/)
+- [BEM methodology](https://en.bem.info/methodology/quick-start/)
+- [BEM syntax](https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
 
 ---
 

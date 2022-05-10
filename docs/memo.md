@@ -16,4 +16,7 @@ p:first-of-type {}
 
 p:last-of-type {}
 
+.is-error::placeholder {}
+
+.tabnav > li:first-child {}
 ```
