@@ -5,6 +5,27 @@ CSS 設計完全ガイド
 ## Link
 
 - [Book Support Page](https://gihyo.jp/book/2020/978-4-297-11173-1/support)
+- [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html)
+- [idiomatic CSS](https://github.com/necolas/idiomaticcss)
+- [Emmet Document](https://docs.emmet.io/)
+  - HTML と CSS を効率よく開発するための toolkit です。editor に plugin として追加することで使える
+  - [Emmet cheat-sheet](https://docs.emmet.io/cheat-sheet)
+- [FLOCSS](https://github.com/hiloki/flocss)
+
+### oocss
+
+- [oocss](http://oocss.org/)
+- [what-is-object-oriented-css](https://www.slideshare.net/stubbornella/what-is-object-oriented-css)
+- [object-oriented-css](https://www.slideshare.net/stubbornella/object-oriented-css)
+
+### BEM
+
+- [bem](https://en.bem.info/)
+- [BEM syntax](https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
+
+### precss
+
+- [precss](https://precss.io/ja/)
 
 ### class 名を決める時に参考するサイト
 

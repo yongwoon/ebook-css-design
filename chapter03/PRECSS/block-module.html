@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <div class="bl_card">
+      <figure class="bl_card_imgWrapper" alt="Web Site Making"></figure>
+
+      <div class="bl_card_body">
+        <p class="bl_card_ttl">Web site making</p>
+        <p lcass="bl_card_txt">
+          Code に best な体験を提供する creative と technology を作り上げます。
+        </p>
+      </div>
+    </div>
+
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+
+    <script src="" async defer></script>
+  </body>
+</html>
+
+<style>
+  .bl_card {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .bl_card_imgWrapper {
+    position: relative;
+    padding-top: 56.25%;
+    overflow: hidden;
+  }
+
+  /* 
+    BEM のように幻覚ではありません。以下のように scope が絞られていれば、
+    子(孫) Selector を使用することも許容しています。
+  */
+  .bl_card_imgWrapper img {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+  }
+
+  .bl_card_body {
+    padding: 15px;
+  }
+
+  .bl_card_ttl {
+    margin-bottom: 5px;
+    font-size: 1.125rem;
+    font-weight: bold;
+  }
+
+  .bl_card_txt {
+    color: #777;
+  }
+</style>
