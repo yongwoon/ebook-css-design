@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <!-- MAIN start -->
+    <input class="inputtext" type="text" placeholder="入力してください" />
+
+    <!-- input error があった場合、 javascript から is-error class をつける -->
+    <input
+      class="inputtext is-error"
+      type="text"
+      placeholder="入力してください。"
+    />
+
+    <ul class="tabnav">
+      <li class="is-active"><a href="#">tab 1</a></li>
+      <li><a href="#">tab 2</a></li>
+      <li><a href="#">tab 3</a></li>
+      <li><a href="#">tab 4</a></li>
+    </ul>
+
+    <!-- MAIN end -->
+
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+
+    <script src="" async defer></script>
+  </body>
+</html>
+
+<style>
+  .inputtext {
+    border: 1px solid #aaa;
+    border-radius: 3px;
+  }
+
+  .inputtext.is-error {
+    border-color: #d40152;
+  }
+
+  .inputtext.is-error::placeholder {
+    color: #d40152;
+  }
+
+  /* base style */
+  .tabnav {
+    display: flex;
+  }
+
+  .tabnav > li {
+    border-top: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+  }
+
+  .tabnav > li:first-child {
+    border-left: 1px solid #aaa;
+  }
+
+  .tabnav > li > a {
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
+  }
+
+  /* active 時の styling */
+  .tabnav > li.is-active {
+    background-color: #0093ff;
+  }
+
+  .tabnav > li.is-active a {
+    pointer-events: none;
+    color: #fff;
+  }
+</style>
