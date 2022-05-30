@@ -71,11 +71,11 @@ Reset は CSS 設計に直接は関係ありませんが、Rest CSS の選択を
 
 ### Reset CSS が必要になってきた背景
 
-browser はそれぞれ default sytle と呼ばれるものを持っており、Styling が全くされていない HTML でも、指定源の見た目を田んぼするようにできています。これを統一しないまま CSS を書くと、「ある browser ではきちんと意図通りに表示できるが、他の browser では意図通りの表示にならない」ということが起こります。
+browser はそれぞれ default sytle と呼ばれるものを持っており、Styling が全くされていない HTML でも、最低限の見た目を担保するようにできています。これを統一しないまま CSS を書くと、「ある browser ではきちんと意図通りに表示できるが、他の browser では意図通りの表示にならない」ということが起こります。
 
 この問題を解消するために Base style を定義する必要があり、そのための手法として現在一般的に用いられているのが 「hard reset」 という手法と 「Normalize」 という手法です
 
-- Hard reset
+- Hard 系 reset css
   - 各要素の余白を取り去る & Font size を統一する
   - ex
     - [HTML5 Doctor Reset CSS](http://html5doctor.com/html-5-reset-stylesheet/)
@@ -86,6 +86,10 @@ browser はそれぞれ default sytle と呼ばれるものを持っており、
   - ex
     - [Normalize.css](https://necolas.github.io/normalize.css/)
     - [sanitize.css](https://csstools.github.io/sanitize.css/)
+
+#### LINK
+
+- [Reset CSS、Normalize CSS、sanitizing CSS の違い](https://qiita.com/sfp_waterwalker/items/30d5c48b64d887269c89)
 
 ### Reset CSS は CSS 設計にどのような影響を及ぼすか
 
