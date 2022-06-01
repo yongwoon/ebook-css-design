@@ -25,4 +25,24 @@ Chapter 4 ~ Chapter 7 の code 前提
   - 横幅: 1200px
   - content layout, header, footer 間の余白: 60px
 
-![content layout, header, footer 間の余白](ch04-space-between-components.png)
+![content layout, header, footer 間の余白](./docs/img/ch04-space-between-components.png)
+
+- Structure
+  - Header
+  - Footer
+  - Content Area
+    - 1 column
+    - 2 column
+
+イメージとしたら以下ようになったら OK
+
+![4-3 各 area を単純に色分けした図](./docs/img/ch04-figure4-3.png)
+
+### Header
+
+- 外測
+  - header 全体を全体を括る要素。上部の余白の確保と、content area との境界となる boarder を実装
+- 内側
+  - haeder 内において、content area と同等の横幅を実装
+
+![Header layout](./docs/img/ch04-header-layout.png)

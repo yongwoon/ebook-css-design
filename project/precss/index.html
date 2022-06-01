@@ -20,6 +20,12 @@
       </p>
     <![endif]-->
 
+    <!-- 外側 -->
+    <header class="ly_header">
+      <!-- 内側 -->
+      <div class="ly_eader_inner"></div>
+    </header>
+
     <script src="" async defer></script>
   </body>
 </html>
@@ -42,5 +48,25 @@
   img {
     max-width: 100%;
     vertical-align: top;
+  }
+
+  /*
+  Layouts
+  */
+  .ly_header {
+    padding-top: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  /* 
+  幅は 1200px だが、css-wipe を使用しており全ての要素に `box-sizing: border-box;` が適用されているため
+  左右の padding の 15px ずつを足して 1230 px にする
+  */
+  .ly_header_inner {
+    max-width: 1230px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
   }
 </style>

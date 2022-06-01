@@ -345,11 +345,11 @@ block module と element module の境界を画一的に定義することは残
 
 ##### Modifier 名の付け方
 
-「何をする modifier なのか」 を m 根威嚇にするために、 modifier 名は 「**backgroundClolorRed」 ように 「**keyValue」 の形を基本としますが、「el_btn**red」 ようにおおよそ想像がづくものであれば、 key の省略が可能です。また、名前が長くあんるのを避けたい場合は、Emmet の short hand に準じて 「**backgroundColorRed」 を 「`__bgcRed`」 のように省略することも可能です。
+「何をする modifier なのか」 を m 根威嚇にするために、 modifier 名は `__backgroundClolorRed` ように 「**keyValue」 の形を基本としますが、「el_btn**red」 ようにおおよそ想像がづくものであれば、 key の省略が可能です。また、名前が長くあんるのを避けたい場合は、Emmet の short hand に準じて `__backgroundColorRed` を `__bgcRed` のように省略することも可能です。
 
 また BEM の場合は命名に 「見た目」 よりも 「意味」 を重視するため、特に色に関しては 「theme」 という単語を含むことを推奨しています。例えば赤色の場合は警告色とみなして 「btn_theme_caution」 という命名をします。
 
-しかし現実として、全ての色に意味を持たせた命名は混乱です。そのため、PRECSS では見た目通りに 「el_btn**red」 と modifier 名を作成することを許容します。もちろん、例えば赤がその site における警告色である場合は、「el_btn**cautionColor」 というように意味を密 modifier 名をつけか t も推奨します。
+しかし現実として、全ての色に意味を持たせた命名は混乱です。そのため、PRECSS では見た目通りに `el_btnred` と modifier 名を作成することを許容します。もちろん、例えば赤がその site における警告色である場合は、`el_btn__cautionColor` というように意味を密 modifier 名をつけか t も推奨します。
 
 #### Block module に対する modifier の例
 
