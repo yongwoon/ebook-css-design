@@ -375,7 +375,7 @@ Block module において子要素に modifier による変更を適用する際
 命名規則に関しては modifier と同様 「keyValue」 の形を取り、省略する場合は Emmet の short hand に準ずることを推奨します
 
 - Emmet の short hand に準じた命名の例
-  - ｀ hp_marginBottom20`→`hp_mb20`
+  - `hp_marginBottom20` → `hp_mb20`
 
 その他の規則として
 

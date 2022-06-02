@@ -46,3 +46,7 @@ Chapter 4 ~ Chapter 7 の code 前提
   - haeder 内において、content area と同等の横幅を実装
 
 ![Header layout](./docs/img/ch04-header-layout.png)
+
+### Footer
+
+![Footer layout](./docs/img/ch04-footer-layout.png)
