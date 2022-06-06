@@ -50,3 +50,9 @@ Chapter 4 ~ Chapter 7 の code 前提
 ### Footer
 
 ![Footer layout](./docs/img/ch04-footer-layout.png)
+
+### Content Area
+
+![One column layout](./docs/img/ch04-one-column-layout.png)
+
+![Intersect background color](./docs/img/ch04-one-column-layout-intersect.png)

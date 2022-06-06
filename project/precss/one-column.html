@@ -21,23 +21,32 @@
     <![endif]-->
 
     <!-- 外側 -->
-    <header class="header">
+    <header class="ly_header">
       <!-- 内側 -->
-      <div class="header_inner"></div>
+      <div class="ly_header_inner"></div>
     </header>
 
-    <footer>
-      <div class="footer">
-        <div class="footer__inner"></div>
-      </div>
+    <main>
+      <article>
+        <section class="ly_cont"></section>
+        <section class="hp_bgcBase">
+          <div class="ly_cont"></div>
+          <!-- /.ly_cont -->
+        </section>
+      </article>
+    </main>
 
-      <div class="footer footer-border-top-gray">
-        <div class="footer__inner">
-          <small class="footer-copyright">&copy;2019 Triad Inc.</small>
-        </div>
-        <!-- /.footer__inner -->
+    <footer>
+      <div class="ly_footer">
+        <div class="ly_footer_inner"></div>
       </div>
-      <!-- /.footer -->
+      <div class="ly_footer hp_btGray">
+        <div class="ly_footer_inner">
+          <small class="ly_footerCopyright">&copy;2019 Triad Inc.</small>
+        </div>
+        <!-- /.ly_footer_inner -->
+      </div>
+      <!-- /.ly_footer -->
     </footer>
 
     <script src="" async defer></script>
@@ -67,7 +76,7 @@
   /*
   Layouts
   */
-  .header {
+  .ly_header {
     padding-top: 20px;
     border-bottom: 1px solid #ddd;
   }
@@ -76,7 +85,7 @@
   幅は 1200px だが、css-wipe を使用しており全ての要素に `box-sizing: border-box;` が適用されているため
   左右の padding の 15px ずつを足して 1230 px にする
   */
-  .header__inner {
+  .ly_header_inner {
     max-width: 1230px;
     padding-right: 15px;
     padding-left: 15px;
@@ -84,17 +93,33 @@
     margin-left: auto;
   }
 
-  .footer {
+  .ly_footer {
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: #222;
   }
 
-  .footer__inner {
+  .ly_footer_inner {
     max-width: 1230px;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+  }
+
+  .hp_btGray {
+    border-top: 1px solid #777 !important;
+  }
+
+  /* ly_content の略 */
+  .ly_cont {
+    max-width: 1230px;
+    padding: 60px 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .hp_bgcBase {
+    background-color: #efefef !important;
   }
 </style>

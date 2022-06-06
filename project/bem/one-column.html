@@ -21,23 +21,33 @@
     <![endif]-->
 
     <!-- 外側 -->
-    <header class="ly_header">
+    <header class="header">
       <!-- 内側 -->
-      <div class="ly_header_inner"></div>
+      <div class="header_inner"></div>
     </header>
-    ]
+
+    <main>
+      <article>
+        <section class="content"></section>
+        <section class="background-color-base">
+          <div class="content"></div>
+          <!-- ./content -->
+        </section>
+      </article>
+    </main>
 
     <footer>
-      <div class="ly_footer">
-        <div class="ly_footer_inner"></div>
+      <div class="footer">
+        <div class="footer__inner"></div>
       </div>
-      <div class="ly_footer hp_btGray">
-        <div class="ly_footer_inner">
-          <small class="ly_footerCopyright">&copy;2019 Triad Inc.</small>
+
+      <div class="footer footer-border-top-gray">
+        <div class="footer__inner">
+          <small class="footer-copyright">&copy;2019 Triad Inc.</small>
         </div>
-        <!-- /.ly_footer_inner -->
+        <!-- /.footer__inner -->
       </div>
-      <!-- /.ly_footer -->
+      <!-- /.footer -->
     </footer>
 
     <script src="" async defer></script>
@@ -67,7 +77,7 @@
   /*
   Layouts
   */
-  .ly_header {
+  .header {
     padding-top: 20px;
     border-bottom: 1px solid #ddd;
   }
@@ -76,7 +86,7 @@
   幅は 1200px だが、css-wipe を使用しており全ての要素に `box-sizing: border-box;` が適用されているため
   左右の padding の 15px ずつを足して 1230 px にする
   */
-  .ly_header_inner {
+  .header__inner {
     max-width: 1230px;
     padding-right: 15px;
     padding-left: 15px;
@@ -84,13 +94,17 @@
     margin-left: auto;
   }
 
-  .ly_footer {
+  .footer {
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: #222;
   }
 
-  .ly_footer_inner {
+  .footer-border-top-gray {
+    border-top: 1px solid #777;
+  }
+
+  .footer__inner {
     max-width: 1230px;
     padding-right: 15px;
     padding-left: 15px;
@@ -98,7 +112,14 @@
     margin-left: auto;
   }
 
-  .hp_btGray {
-    border-top: 1px solid #777 !important;
+  .content {
+    max-width: 1230px;
+    padding: 60px 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .background-color-base {
+    background-color: #efefef;
   }
 </style>
