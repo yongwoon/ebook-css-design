@@ -12,6 +12,13 @@ BEM では名前の通り、module を
 
 という単位で分解し、定義しています。また**これら Block・Element・Modifier をまとめて 「BEM Entity」 と呼びます。**
 
+## 書き方
+
+- `.Block`
+- `.Block__Element`
+- `.Block--Modifier`
+- `.Block__Element--Modifier`
+
 ## Rule
 
 - 要素系 Selector や ID Selector の使用は推奨されません。 Class selector の使用が基本になります。
@@ -19,7 +26,7 @@ BEM では名前の通り、module を
 - Block, Element, Modifier の命名
   - Block と Element は class の名前が主に 「それが何であるか」 ということを重視している
   - Modifier は 「それがどうであるか」 を重視する
-- Blockå
+- Block
   - Layout に関する style(周りに影響を及ぼす position や float, margin など)をしてはいけません。
   - Class 名は半角英語数字の小文字で、複数の単語は hyphen でつなぐ
   - Block の nest は許容する
