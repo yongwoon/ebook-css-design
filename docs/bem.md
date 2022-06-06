@@ -12,6 +12,13 @@ BEM では名前の通り、module を
 
 という単位で分解し、定義しています。また**これら Block・Element・Modifier をまとめて 「BEM Entity」 と呼びます。**
 
+## 書き方
+
+- `.Block`
+- `.Block__Element`
+- `.Block--Modifier`
+- `.Block__Element--Modifier`
+
 ## Rule
 
 - 要素系 Selector や ID Selector の使用は推奨されません。 Class selector の使用が基本になります。

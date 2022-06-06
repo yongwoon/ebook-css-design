@@ -47,3 +47,7 @@ CSS 設計完全ガイド
 - [lightning Design Systenm](https://www.lightningdesignsystem.com/)
 - [tailwindcss](https://tailwindcss.com/)
 - [11 Best WYSIWYG HTML Editors for Your Site](https://blog.hubspot.com/website/best-wysiwyg-html-editor#:~:text=A%20WYSIWYG%20editor%20%E2%80%94%20short%20for,displayed%20on%20your%20live%20website.)
+
+### Flex
+
+- [flex: 1](https://miyattiblog.com/explanation-of-flex-property/)
