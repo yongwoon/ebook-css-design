@@ -58,3 +58,7 @@ Chapter 4 ~ Chapter 7 の code 前提
 ![Intersect background color](./docs/img/ch04-one-column-layout-intersect.png)
 
 ![Two column layout](./docs/img/ch04-two-column-layout.png)
+
+## Link
+
+- [fontawesome](https://fontawesome.com/)
