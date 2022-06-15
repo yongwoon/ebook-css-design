@@ -26,6 +26,12 @@
     <!-- 3つ以上のスタイルの差異があれば、別の class として分離することを検討 -->
     <a class="rounded-btn" href="#">角丸ボタン</a>
 
+    <a class="before-icon-btn before-icon-btn--download" href="#"
+      >ダウンロード</a
+    >
+
+    <a class="before-icon-btn before-icon-btn--zoom" href="#">拡大</a>
+
     <!--[if lt IE 7]>
       <p class="browsehappy">
         You are using an <strong>outdated</strong> browser. Please
@@ -125,5 +131,37 @@
     background-color: #fff;
     border-color: currentColor;
     color: #e25c00;
+  }
+
+  .before-icon-btn {
+    position: relative;
+    display: inline-block;
+    padding: 0.2em 0.3em;
+    border: 1px solid currentColor;
+    color: #e25c00;
+    text-decoration: none;
+    transition: 0.25s;
+  }
+
+  .before-icon-btn:focus,
+  .before-icon-btn:hover {
+    background-color: #e25c00;
+    color: #fff;
+  }
+
+  .before-icon-btn::before {
+    display: inline-block;
+    margin-right: 0.5em;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+  }
+
+  .before-icon-btn--download::before {
+    content: "\f019";
+  }
+
+  .before-icon-btn--zoom::before {
+    content: "\f00e";
+    transform: translateY(-6%);
   }
 </style>
