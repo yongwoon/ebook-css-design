@@ -17,20 +17,32 @@
     ></script>
   </head>
   <body>
-    <a class="btn btn--arrow-right" href="#">標準ボタン</a>
+    <div class="p-20">
+      <a class="btn btn--arrow-right" href="#">標準ボタン</a>
+    </div>
 
-    <a class="btn btn--large" href="#">大ボタン</a>
+    <div class="p-20">
+      <a class="btn btn--large" href="#">大ボタン</a>
+    </div>
 
-    <a class="btn btn--warning" href="#">色違いボタン</a>
+    <div class="p-20">
+      <a class="btn btn--warning" href="#">色違いボタン</a>
+    </div>
 
-    <!-- 3つ以上のスタイルの差異があれば、別の class として分離することを検討 -->
-    <a class="rounded-btn" href="#">角丸ボタン</a>
+    <div class="p-20">
+      <!-- 3つ以上のスタイルの差異があれば、別の class として分離することを検討 -->
+      <a class="rounded-btn" href="#">角丸ボタン</a>
+    </div>
 
-    <a class="before-icon-btn before-icon-btn--download" href="#"
-      >ダウンロード</a
-    >
+    <div class="p-20">
+      <a class="before-icon-btn before-icon-btn--download" href="#">
+        ダウンロード
+      </a>
+    </div>
 
-    <a class="before-icon-btn before-icon-btn--zoom" href="#">拡大</a>
+    <div class="p-20">
+      <a class="before-icon-btn before-icon-btn--zoom" href="#">拡大</a>
+    </div>
 
     <!--[if lt IE 7]>
       <p class="browsehappy">
@@ -44,6 +56,9 @@
 </html>
 
 <style>
+  .p-20 {
+    padding: 20px;
+  }
   .btn {
     display: inline-block;
     width: 300px;

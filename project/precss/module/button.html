@@ -17,20 +17,32 @@
     ></script>
   </head>
   <body>
-    <a class="el_btn el_btn__arrowRight" href="#">標準ボタン</a>
+    <div class="hp_p20">
+      <a class="el_btn el_btn__arrowRight" href="#">標準ボタン</a>
+    </div>
 
-    <a class="el_btn el_btn__large" href="#">大ボタン</a>
+    <div class="hp_p20">
+      <a class="el_btn el_btn__large" href="#">大ボタン</a>
+    </div>
 
-    <a class="el_btn el_btn__yellow" href="#">色違いボタン</a>
+    <div class="hp_p20">
+      <a class="el_btn el_btn__yellow" href="#">色違いボタン</a>
+    </div>
 
-    <!-- 3つ以上のスタイルの差異があれば、別の class として分離することを検討 -->
-    <a class="el_roundedBtn" href="#">角丸ボタン</a>
+    <div class="hp_p20">
+      <!-- 3つ以上のスタイルの差異があれば、別の class として分離することを検討 -->
+      <a class="el_roundedBtn" href="#">角丸ボタン</a>
+    </div>
 
-    <a class="el_beforeIconBtn el_beforeIconBtn__download" href="#"
-      >ダウンロード</a
-    >
+    <div class="hp_p20">
+      <a class="el_beforeIconBtn el_beforeIconBtn__download" href="#">
+        ダウンロード
+      </a>
+    </div>
 
-    <a class="el_beforeIconBtn el_beforeIconBtn__zoom" href="#">拡大</a>
+    <div class="hp_p20">
+      <a class="el_beforeIconBtn el_beforeIconBtn__zoom" href="#">拡大</a>
+    </div>
 
     <!--[if lt IE 7]>
       <p class="browsehappy">
@@ -44,6 +56,9 @@
 </html>
 
 <style>
+  .hp_p20 {
+    padding: 20px;
+  }
   /* 
   inline-block に設定していると、親の段落の text-align の値を継承するため、
   button の揃えのための CSS をいちいち書く方法がありません。
