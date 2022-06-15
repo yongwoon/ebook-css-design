@@ -44,6 +44,35 @@
       <a class="el_beforeIconBtn el_beforeIconBtn__zoom" href="#">拡大</a>
     </div>
 
+    <div class="hp_p20">
+      <span class="el_beforeIcon el_beforeIcon__pdf">
+        <a href="#">ファイル名.pdf</a>
+      </span>
+
+      <span class="el_beforeIcon el_beforeIcon__excel">
+        <a href="#">ファイル名.xlsx</a>
+      </span>
+
+      <span class="el_beforeIcon el_beforeIcon__PP">
+        <a href="#">ファイル名.pptx</a>
+      </span>
+
+      <span class="el_beforeIcon el_beforeIcon__checkSquare">
+        <a href="#">チェック項目</a>
+      </span>
+    </div>
+
+    <div class="hp_p20">
+      <span class="el_beforeIcon el_beforeIcon__chevLeft">
+        <a href="#">戻る</a>
+      </span>
+    </div>
+
+    <div class="hp_p20">
+      <span class="el_afterIcon el_afterIcon__chevLeft">
+        <a href="#">戻る</a>
+      </span>
+    </div>
     <!--[if lt IE 7]>
       <p class="browsehappy">
         You are using an <strong>outdated</strong> browser. Please
@@ -125,7 +154,7 @@
     position: absolute;
     top: 50%;
     right: 0.83em;
-    font-family: "Front Awesome 5 Free";
+    font-family: "Font Awesome 5 Free";
     font-weight: 900;
     transform: translateY(-50%);
   }
@@ -183,5 +212,54 @@
   .el_beforeIconBtn.el_beforeIconBtn__zoom::before {
     content: "\f00e";
     transform: translateY(-6%);
+  }
+
+  .el_beforeIcon::before {
+    display: inline-block;
+    margin-right: 0.3em;
+    color: #e25c00;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+  }
+
+  .el_beforeIcon.el_beforeIcon__pdf::before {
+    content: "\f1c1";
+  }
+
+  .el_beforeIcon.el_beforeIcon__excel::before {
+    content: "\f1c3";
+  }
+
+  .el_beforeIcon.el_beforeIcon__PP::before {
+    content: "\f1c4";
+  }
+
+  .el_beforeIcon.el_beforeIcon__checkSquare::before {
+    content: "\f14a";
+  }
+
+  .el_beforeIcon.el_beforeIcon__chevLeft::before {
+    content: "";
+    width: 0.375em;
+    height: 0.375em;
+    border-bottom: 0.125em solid #e25c00;
+    border-left: 0.125em solid #e25c00;
+    transform: rotate(45deg) translateY(-30%);
+  }
+
+  .el_afterIcon::after {
+    display: inline-block;
+    margin-left: 0.3em;
+    color: #e25c00;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+  }
+  .el_afterIcon.el_afterIcon__chevLeft::after {
+    content: "";
+    width: 0.375em;
+    height: 0.375em;
+    border-top: 0.125em solid #e25c00;
+    border-right: 0.125em solid #e25c00;
+    transform: rotate(45deg);
   }
 </style>
