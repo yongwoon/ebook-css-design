@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+    <script
+      src="https://kit.fontawesome.com/56017fa7f9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="p-20">
+      <a class="btn btn--arrow-right" href="#">標準ボタン</a>
+    </div>
+
+    <div class="p-20">
+      <a class="btn btn--large" href="#">大ボタン</a>
+    </div>
+
+    <div class="p-20">
+      <a class="btn btn--warning" href="#">色違いボタン</a>
+    </div>
+
+    <div class="p-20">
+      <!-- 3つ以上のスタイルの差異があれば、別の class として分離することを検討 -->
+      <a class="rounded-btn" href="#">角丸ボタン</a>
+    </div>
+
+    <div class="p-20">
+      <a class="before-icon-btn before-icon-btn--download" href="#">
+        ダウンロード
+      </a>
+    </div>
+
+    <div class="p-20">
+      <a class="before-icon-btn before-icon-btn--zoom" href="#">拡大</a>
+    </div>
+
+    <div class="p-20">
+      <span class="before-icon before-icon--pdf">
+        <a href="#">ファイル名.pdf</a>
+      </span>
+
+      <span class="before-icon before-icon--excel">
+        <a href="#">ファイル名.xlsx</a>
+      </span>
+
+      <span class="before-icon before-icon--power-point">
+        <a href="#">ファイル名.pptx</a>
+      </span>
+
+      <span class="before-icon before-icon--check-square">
+        <a href="#">チェック項目</a>
+      </span>
+    </div>
+
+    <div class="p-20">
+      <span class="before-icon before-icon--chevron-left">
+        <a href="#">戻る</a>
+      </span>
+    </div>
+
+    <div class="p-20">
+      <span class="after-icon after-icon--chevron-right">
+        <a href="#">進む</a>
+      </span>
+    </div>
+
+    <div class="p-20">
+      <span class="label">News</span>
+    </div>
+
+    <div class="p-20">
+      <span class="label label--warning">PRESS RELEASE</span>
+    </div>
+
+    <div class="p-20">
+      <a class="label label--link">NEWS</a>
+    </div>
+
+    <div class="p-20">
+      <a class="rounded-label">NEWS</a>
+    </div>
+
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+
+    <script src="" async defer></script>
+  </body>
+</html>
+
+<style>
+  .p-20 {
+    padding: 20px;
+  }
+  .btn {
+    display: inline-block;
+    width: 300px;
+    max-width: 100%;
+    padding: 20px 10px;
+    background-color: #e25c00;
+    border: 2px solid transparent;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    color: #fff;
+    font-size: 1.125rem;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.25s;
+  }
+
+  .btn--large {
+    width: 340px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 1.375rem;
+  }
+
+  /*
+  currentColor
+  - その要素事態に color property  の値が設定されていれば、その値
+  - なければ、直近の親要素の color property の値
+  を継承します。今回は hover 時の color propert 「#e25c00」を指定していますので、
+  hover color もこの 「#e25c00」 が適用されます
+  */
+  .btn:focus,
+  .btn:hover {
+    background-color: #fff;
+    border-color: currentColor;
+    color: #e25c00;
+  }
+
+  .btn--arrow-right {
+    position: relative;
+    padding-right: 2em;
+    padding-left: 1.38em;
+  }
+
+  .btn--warning {
+    background-color: #f1de00;
+    color: #222;
+  }
+
+  .btn--warning:focus,
+  .btn--warning:hover {
+    border-color: #f1de00;
+    color: #222;
+  }
+
+  /* 
+  https://fontawesome.com/icons/arrow-right?style=solid&s=solid 
+  */
+  .btn--arrow-right::after {
+    content: "\f061";
+    position: absolute;
+    top: 50%;
+    right: 0.83em;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    transform: translateY(-50%);
+  }
+
+  .rounded-btn {
+    display: inline-block;
+    width: 236;
+    max-width: 100%;
+    padding: 15px 10px;
+    background-color: #e25c00;
+    border: 2px solid transparent;
+    border-bottom-color: #d40152;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.125rem;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.25s;
+  }
+
+  .rounded-btn:focus,
+  .rounded-btn:hover {
+    background-color: #fff;
+    border-color: currentColor;
+    color: #e25c00;
+  }
+
+  .before-icon-btn {
+    position: relative;
+    display: inline-block;
+    padding: 0.2em 0.3em;
+    border: 1px solid currentColor;
+    color: #e25c00;
+    text-decoration: none;
+    transition: 0.25s;
+  }
+
+  .before-icon-btn:focus,
+  .before-icon-btn:hover {
+    background-color: #e25c00;
+    color: #fff;
+  }
+
+  .before-icon-btn::before {
+    display: inline-block;
+    margin-right: 0.5em;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+  }
+
+  .before-icon-btn--download::before {
+    content: "\f019";
+  }
+
+  .before-icon-btn--zoom::before {
+    content: "\f00e";
+    transform: translateY(-6%);
+  }
+
+  .before-icon::before {
+    display: inline-block;
+    margin-right: 0.3em;
+    color: #e25c00;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+  }
+
+  .before-icon--pdf::before {
+    content: "\f1c1";
+  }
+
+  .before-icon--excel::before {
+    content: "\f1c3";
+  }
+
+  .before-icon--power-point::before {
+    content: "\f1c4";
+  }
+
+  .before-icon--check-square::before {
+    content: "\f14a";
+  }
+
+  .before-icon--chevron-left::before {
+    content: "";
+    width: 0.375em;
+    height: 0.375em;
+    border-bottom: 0.125em solid #e25c00;
+    border-left: 0.125em solid #e25c00;
+    transform: rotate(45deg) translateY(-30%);
+  }
+
+  .after-icon::after {
+    display: inline-block;
+    margin-left: 0.3em;
+    color: #e25c00;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+  }
+
+  .after-icon--chevron-right::after {
+    content: "";
+    width: 0.375em;
+    height: 0.375em;
+    border-top: 0.125em solid #e25c00;
+    border-right: 0.125em solid #e25c00;
+    transform: rotate(45deg);
+  }
+
+  .label {
+    display: inline-block;
+    padding: 0.2em 0.3em;
+    background-color: #e25c00;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border: 2px solid transparent;
+  }
+
+  .label--warning {
+    background-color: #f2de00;
+    color: #000;
+  }
+
+  /*
+  BEM は 「詳細度は flat に、styiing は plus に」 が基本のため、
+  link となった際の挙動の styling も class に行います。
+  */
+  .label--link {
+    text-decoration: none;
+    transition: 0.25s;
+  }
+
+  .label--link:focus,
+  .label--link:hover {
+    background-color: #000;
+    border-color: currentColor;
+    color: #e25c00;
+  }
+
+  .rounded-label {
+    display: inline-block;
+    padding: 0.3em 0.9em;
+    background-color: #e25c00;
+    border-radius: 1em;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: bold;
+  }
+</style>

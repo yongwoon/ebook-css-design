@@ -24,6 +24,8 @@ CSS 設計完全ガイド
   - HTML と CSS を効率よく開発するための toolkit です。editor に plugin として追加することで使える
   - [Emmet cheat-sheet](https://docs.emmet.io/cheat-sheet)
 - [FLOCSS](https://github.com/hiloki/flocss)
+- [csscomb](https://csscomb.herokuapp.com/online)
+  - CSS の property の順番を事前に定義した通りに並び替えてくれる
 
 ### oocss
 
@@ -51,3 +53,7 @@ CSS 設計完全ガイド
 ### Flex
 
 - [flex: 1](https://miyattiblog.com/explanation-of-flex-property/)
+
+### Layout
+
+- [理解しておきたい、CSS によるインラインレイアウトの仕組み（font-size／line-height 編）Inline Layout─Frontrend Conference](https://html5experts.jp/takazudo/13339/)

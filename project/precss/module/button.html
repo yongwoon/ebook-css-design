@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+    <script
+      src="https://kit.fontawesome.com/56017fa7f9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="hp_p20">
+      <a class="el_btn el_btn__arrowRight" href="#">標準ボタン</a>
+    </div>
+
+    <div class="hp_p20">
+      <a class="el_btn el_btn__large" href="#">大ボタン</a>
+    </div>
+
+    <div class="hp_p20">
+      <a class="el_btn el_btn__yellow" href="#">色違いボタン</a>
+    </div>
+
+    <div class="hp_p20">
+      <!-- 3つ以上のスタイルの差異があれば、別の class として分離することを検討 -->
+      <a class="el_roundedBtn" href="#">角丸ボタン</a>
+    </div>
+
+    <div class="hp_p20">
+      <a class="el_beforeIconBtn el_beforeIconBtn__download" href="#">
+        ダウンロード
+      </a>
+    </div>
+
+    <div class="hp_p20">
+      <a class="el_beforeIconBtn el_beforeIconBtn__zoom" href="#">拡大</a>
+    </div>
+
+    <div class="hp_p20">
+      <span class="el_beforeIcon el_beforeIcon__pdf">
+        <a href="#">ファイル名.pdf</a>
+      </span>
+
+      <span class="el_beforeIcon el_beforeIcon__excel">
+        <a href="#">ファイル名.xlsx</a>
+      </span>
+
+      <span class="el_beforeIcon el_beforeIcon__PP">
+        <a href="#">ファイル名.pptx</a>
+      </span>
+
+      <span class="el_beforeIcon el_beforeIcon__checkSquare">
+        <a href="#">チェック項目</a>
+      </span>
+    </div>
+
+    <div class="hp_p20">
+      <span class="el_beforeIcon el_beforeIcon__chevLeft">
+        <a href="#">戻る</a>
+      </span>
+    </div>
+
+    <div class="hp_p20">
+      <span class="el_afterIcon el_afterIcon__chevLeft">
+        <a href="#">戻る</a>
+      </span>
+    </div>
+
+    <div class="hp_p20">
+      <span class="el_label">News</span>
+    </div>
+
+    <div class="hp_p20">
+      <span class="el_label el_label__yellow">PRESS RELEASE</span>
+    </div>
+
+    <div class="hp_p20">
+      <a class="el_label">News</a>
+    </div>
+
+    <div class="hp_p20">
+      <a class="el_roundedLabel">News</a>
+    </div>
+
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+
+    <script src="" async defer></script>
+  </body>
+</html>
+
+<style>
+  .hp_p20 {
+    padding: 20px;
+  }
+  /* 
+  inline-block に設定していると、親の段落の text-align の値を継承するため、
+  button の揃えのための CSS をいちいち書く方法がありません。
+  */
+  .el_btn {
+    display: inline-block;
+    width: 300px;
+    max-width: 100%;
+    padding: 20px 10px;
+    background-color: #e25c00;
+    border: 2px solid transparent;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    color: #fff;
+    font-size: 1.125rem;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.25s;
+  }
+
+  .el_btn.el_btn__large {
+    width: 340px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 1.375rem;
+  }
+
+  /*
+  currentColor
+  - その要素事態に color property  の値が設定されていれば、その値
+  - なければ、直近の親要素の color property の値
+  を継承します。今回は hover 時の color propert 「#e25c00」を指定していますので、
+  hover color もこの 「#e25c00」 が適用されます
+  */
+  .el_btn:focus,
+  .el_btn:hover {
+    background-color: #fff;
+    border-color: currentColor;
+    color: #e25c00;
+  }
+
+  .el_btn.el_btn__arrowRight {
+    position: relative;
+    padding-right: 2em;
+    padding-left: 1.38em;
+  }
+
+  .el_btn.el_btn__yellow {
+    background-color: #f1de00;
+    color: #222;
+  }
+
+  .el_btn.el_btn__yellow:focus,
+  .el_btn.el_btn__yellow:hover {
+    border-color: #f1de00;
+    background-color: #fff;
+    color: #222;
+  }
+
+  /* 
+  https://fontawesome.com/icons/arrow-right?style=solid&s=solid 
+  */
+  .el_btn.el_btn__arrowRight::after {
+    content: "\f061";
+    position: absolute;
+    top: 50%;
+    right: 0.83em;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    transform: translateY(-50%);
+  }
+
+  .el_roundedBtn {
+    display: inline-block;
+    width: 236;
+    max-width: 100%;
+    padding: 15px 10px;
+    background-color: #e25c00;
+    border: 2px solid transparent;
+    border-bottom-color: #d40152;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.125rem;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.25s;
+  }
+
+  .el_roundedBtn:focus,
+  .el_roundedBtn:hover {
+    background-color: #fff;
+    border-color: currentColor;
+    color: #e25c00;
+  }
+
+  .el_beforeIconBtn {
+    position: relative;
+    display: inline-block;
+    padding: 0.2em 0.3em;
+    border: 1px solid currentColor;
+    color: #e25c00;
+    text-decoration: none;
+    transition: 0.25s;
+  }
+
+  .el_beforeIconBtn:focus,
+  .el_beforeIconBtn:hover {
+    background-color: #e25c00;
+    color: #fff;
+  }
+
+  .el_beforeIconBtn::before {
+    display: inline-block;
+    margin-right: 0.5em;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+  }
+
+  .el_beforeIconBtn.el_beforeIconBtn__download::before {
+    content: "\f019";
+  }
+
+  .el_beforeIconBtn.el_beforeIconBtn__zoom::before {
+    content: "\f00e";
+    transform: translateY(-6%);
+  }
+
+  .el_beforeIcon::before {
+    display: inline-block;
+    margin-right: 0.3em;
+    color: #e25c00;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+  }
+
+  .el_beforeIcon.el_beforeIcon__pdf::before {
+    content: "\f1c1";
+  }
+
+  .el_beforeIcon.el_beforeIcon__excel::before {
+    content: "\f1c3";
+  }
+
+  .el_beforeIcon.el_beforeIcon__PP::before {
+    content: "\f1c4";
+  }
+
+  .el_beforeIcon.el_beforeIcon__checkSquare::before {
+    content: "\f14a";
+  }
+
+  .el_beforeIcon.el_beforeIcon__chevLeft::before {
+    content: "";
+    width: 0.375em;
+    height: 0.375em;
+    border-bottom: 0.125em solid #e25c00;
+    border-left: 0.125em solid #e25c00;
+    transform: rotate(45deg) translateY(-30%);
+  }
+
+  .el_afterIcon::after {
+    display: inline-block;
+    margin-left: 0.3em;
+    color: #e25c00;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+  }
+  .el_afterIcon.el_afterIcon__chevLeft::after {
+    content: "";
+    width: 0.375em;
+    height: 0.375em;
+    border-top: 0.125em solid #e25c00;
+    border-right: 0.125em solid #e25c00;
+    transform: rotate(45deg);
+  }
+
+  .el_label {
+    display: inline-block;
+    padding: 0.2em 0.3em;
+    background-color: #e25c00;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border: 2px solid transparent;
+  }
+
+  .el_label.el_label__yellow {
+    background-color: #f2de00;
+    color: #000;
+  }
+
+  a.el_label {
+    text-decoration: none;
+    transition: 0.25s;
+  }
+
+  a.el_label:focus,
+  a.el_label:hover {
+    background-color: #000;
+    border-color: currentColor;
+    color: #e25c00;
+  }
+
+  .el_roundedLabel {
+    display: inline-block;
+    padding: 0.3em 0.9em;
+    background-color: #e25c00;
+    border-radius: 1em;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: bold;
+  }
+</style>

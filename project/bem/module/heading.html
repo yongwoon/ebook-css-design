@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="p-20">
+      <h1 class="level1-heading">
+        <span class="level1-heading__inner">ページタイトル</span>
+      </h1>
+    </div>
+
+    <div class="p-20">
+      <h2 class="level2-heading">見出し2</h2>
+    </div>
+
+    <div class="p-20">
+      <h3 class="level3-heading">見出し3</h3>
+    </div>
+
+    <div class="p-20">
+      <h4 class="level4-heading">見出し4</h4>
+    </div>
+
+    <div class="p-20">
+      <h5 class="level5-heading">見出し5</h5>
+    </div>
+
+    <div class="p-20">
+      <h6 class="level6-heading">見出し6</h6>
+    </div>
+  </body>
+</html>
+
+<style>
+  .p-20 {
+    padding: 20px;
+  }
+
+  .level1-heading {
+    padding: 30px 10px;
+    background-color: #e25c00;
+    color: #fff;
+    font-size: 1.75em;
+    text-align: center;
+  }
+
+  .level1-heading__inner {
+    position: relative;
+    display: inline-block;
+    transform: translateY(-20%);
+  }
+
+  .level1-heading__inner::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 80px;
+    height: 1px;
+    background-color: currentColor;
+    transform: translateX(-50px);
+  }
+
+  .level2-heading {
+    padding-bottom: 10px;
+    border-bottom: 4px solid #e25c00;
+    font-size: 1.75rem;
+    font-weight: bold;
+  }
+
+  .level3-heading {
+    padding-bottom: 6px;
+    border-bottom: 2px solid #e25c00;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .level4-heading {
+    padding-bottom: 6px;
+    border-bottom: 2px solid #e25c00;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  .level5-heading {
+    color: #e25c00;
+    font-size: 1.125rem;
+    font-weight: bold;
+  }
+
+  .level6-heading {
+    font-size: 1.125rem;
+  }
+</style>

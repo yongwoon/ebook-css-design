@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="hp_p20">
+      <h1 class="el_lv1Heading">
+        <span>ページタイトル</span>
+      </h1>
+    </div>
+
+    <div class="hp_p20">
+      <h2 class="el_lv2Heading">見出し2</h2>
+    </div>
+
+    <div class="hp_p20">
+      <h3 class="el_lv3Heading">見出し3</h3>
+    </div>
+
+    <div class="hp_p20">
+      <h4 class="el_lv4Heading">見出し4</h4>
+    </div>
+
+    <div class="hp_p20">
+      <h5 class="el_lv5Heading">見出し5</h5>
+    </div>
+
+    <div class="hp_p20">
+      <h6 class="el_lv6Heading">見出し6</h6>
+    </div>
+  </body>
+</html>
+
+<style>
+  .hp_p20 {
+    padding: 20px;
+  }
+
+  .el_lv1Heading {
+    padding: 30px 10px;
+    background-color: #e25c00;
+    color: #fff;
+    font-size: 1.75em;
+    text-align: center;
+  }
+
+  .el_lv1Heading > span {
+    position: relative;
+    display: inline-block;
+    transform: translateY(-20%);
+  }
+
+  .el_lv1Heading > span::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 80px;
+    height: 1px;
+    background-color: currentColor;
+    transform: translateX(-50px);
+  }
+
+  .el_lv2Heading {
+    padding-bottom: 10px;
+    border-bottom: 4px solid #e25c00;
+    font-size: 1.75rem;
+    font-weight: bold;
+  }
+
+  .el_lv3Heading {
+    padding-bottom: 6px;
+    border-bottom: 2px solid #e25c00;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .el_lv4Heading {
+    padding-bottom: 6px;
+    border-bottom: 2px solid #e25c00;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  .el_lv5Heading {
+    color: #e25c00;
+    font-size: 1.125rem;
+    font-weight: bold;
+  }
+
+  .el_lv6Heading {
+    font-size: 1.125rem;
+  }
+</style>
