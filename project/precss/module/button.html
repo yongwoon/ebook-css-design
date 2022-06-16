@@ -73,6 +73,23 @@
         <a href="#">戻る</a>
       </span>
     </div>
+
+    <div class="hp_p20">
+      <span class="el_label">News</span>
+    </div>
+
+    <div class="hp_p20">
+      <span class="el_label el_label__yellow">PRESS RELEASE</span>
+    </div>
+
+    <div class="hp_p20">
+      <a class="el_label">News</a>
+    </div>
+
+    <div class="hp_p20">
+      <a class="el_roundedLabel">News</a>
+    </div>
+
     <!--[if lt IE 7]>
       <p class="browsehappy">
         You are using an <strong>outdated</strong> browser. Please
@@ -261,5 +278,42 @@
     border-top: 0.125em solid #e25c00;
     border-right: 0.125em solid #e25c00;
     transform: rotate(45deg);
+  }
+
+  .el_label {
+    display: inline-block;
+    padding: 0.2em 0.3em;
+    background-color: #e25c00;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border: 2px solid transparent;
+  }
+
+  .el_label.el_label__yellow {
+    background-color: #f2de00;
+    color: #000;
+  }
+
+  a.el_label {
+    text-decoration: none;
+    transition: 0.25s;
+  }
+
+  a.el_label:focus,
+  a.el_label:hover {
+    background-color: #000;
+    border-color: currentColor;
+    color: #e25c00;
+  }
+
+  .el_roundedLabel {
+    display: inline-block;
+    padding: 0.3em 0.9em;
+    background-color: #e25c00;
+    border-radius: 1em;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: bold;
   }
 </style>

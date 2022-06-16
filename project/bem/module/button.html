@@ -74,6 +74,22 @@
       </span>
     </div>
 
+    <div class="p-20">
+      <span class="label">News</span>
+    </div>
+
+    <div class="p-20">
+      <span class="label label--warning">PRESS RELEASE</span>
+    </div>
+
+    <div class="p-20">
+      <a class="label label--link">NEWS</a>
+    </div>
+
+    <div class="p-20">
+      <a class="rounded-label">NEWS</a>
+    </div>
+
     <!--[if lt IE 7]>
       <p class="browsehappy">
         You are using an <strong>outdated</strong> browser. Please
@@ -258,5 +274,46 @@
     border-top: 0.125em solid #e25c00;
     border-right: 0.125em solid #e25c00;
     transform: rotate(45deg);
+  }
+
+  .label {
+    display: inline-block;
+    padding: 0.2em 0.3em;
+    background-color: #e25c00;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border: 2px solid transparent;
+  }
+
+  .label--warning {
+    background-color: #f2de00;
+    color: #000;
+  }
+
+  /*
+  BEM は 「詳細度は flat に、styiing は plus に」 が基本のため、
+  link となった際の挙動の styling も class に行います。
+  */
+  .label--link {
+    text-decoration: none;
+    transition: 0.25s;
+  }
+
+  .label--link:focus,
+  .label--link:hover {
+    background-color: #000;
+    border-color: currentColor;
+    color: #e25c00;
+  }
+
+  .rounded-label {
+    display: inline-block;
+    padding: 0.3em 0.9em;
+    background-color: #e25c00;
+    border-radius: 1em;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: bold;
   }
 </style>
