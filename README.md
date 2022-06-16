@@ -53,3 +53,7 @@ CSS 設計完全ガイド
 ### Flex
 
 - [flex: 1](https://miyattiblog.com/explanation-of-flex-property/)
+
+### Layout
+
+- [理解しておきたい、CSS によるインラインレイアウトの仕組み（font-size／line-height 編）Inline Layout─Frontrend Conference](https://html5experts.jp/takazudo/13339/)
