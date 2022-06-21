@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="bl_media bl_media__rev">
+      <figure class="bl_media_imgWrapper">
+        <img
+          src="../../assets/img/elements/persona.jpg"
+          alt="写真:手に持たれたスマホ"
+        />
+      </figure>
+
+      <div class="bl_media_body">
+        <h3 class="bl_media_ttl">ユーザーを考えた設計で満足な体験を</h3>
+
+        <p class="bl_media_txt">
+          提供するサービスやペルソナによって、webサイトの設計は異なります。サービスやペルソナに合わせた設計を行うことにより、訪問者にストレスのないよりよい体験を生み出し、満足を高めることとなります。
+          <br />
+          わたしたちはお客さまのサイトに合ったユーザビリティを考えるため、分析やヒアリングをきめ細かく実施、マン速を体験できるクリエイティブとテクノロジーを設計・構築し、今までにない機体を超えたユーザー体験を提供いたします。
+        </p>
+      </div>
+      <!-- bl_media body -->
+    </div>
+    <!-- bl_media -->
+  </body>
+</html>
+
+<style>
+  .hp_p20 {
+    padding: 20px;
+  }
+
+  .bl_media {
+    display: flex;
+    align-items: center;
+  }
+
+  .bl_media.bl_media__rev {
+    flex-direction: row-reverse;
+  }
+
+  .bl_media__rev .bl_media_imgWrapper {
+    margin-right: 0;
+  }
+
+  .bl_media__rev .bl_media_body {
+    margin-right: 3.33333%;
+    text-align: right;
+  }
+  /* 
+  screen size を縮小した際に画像、text の両方を自然に縮小させるための指定です。
+  flex というのは Flexbox 関連 property の short-had であり
+  「flex: 0 10 27.58333%」 は順番に
+  - flex-grow: 0;
+  - flex-shrink: 1;
+  - flex-basis: 27.58333%;
+
+  https://drafts.csswg.org/css-flexbox-1/#flex-grow-property
+  */
+  .bl_media_imgWrapper {
+    flex: 0 1 27.58333%;
+    margin-right: 3.33333%;
+  }
+
+  .bl_media_imgWrapper > img {
+    width: 100%;
+  }
+
+  .bl_media_body {
+    flex: 1;
+  }
+
+  /* 最後の要素の余白を Reset */
+  .bl_media_body > *:last-child {
+    margin-bottom: 0;
+  }
+
+  .bl_media_ttl {
+    margin-bottom: 10px;
+    font-size: 1.125rem;
+    font-weight: bold;
+  }
+
+  /* bl_media query 適用時 */
+  @media screen and (max-width: 768px) {
+    .bl_media {
+      display: block;
+    }
+
+    .bl_media_imgWrapper {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+
+    .bl_media__rev .bl_media_body {
+      margin-right: 0;
+    }
+  }
+</style>
