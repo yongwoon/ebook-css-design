@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="vertical-table">
+      <table class="vertical-table__inner">
+        <thead class="vertical-table__header">
+          <tr class="vertical-table__header-row">
+            <th class="vertical-table__header">名前</th>
+            <th class="vertical-table__header">所属</th>
+            <th class="vertical-table__header">職種</th>
+            <th class="vertical-table__header">得意分野</th>
+          </tr>
+        </thead>
+
+        <tbody class="vertical-table__body">
+          <tr class="vertical-table__body-row">
+            <td class="vertical-table__text">yongwoon kim</td>
+            <td class="vertical-table__text">my address</td>
+            <td class="vertical-table__text">Engineer</td>
+            <td class="vertical-table__text">
+              CSS design, CMS,CSS design, CMS,CSS design, CMS,CSS design,
+              CMS,CSS design, CMS,CSS design, CMS,CSS design, CMS,CSS design,
+              CMS,CSS design, CMS
+            </td>
+          </tr>
+
+          <tr class="vertical-table__body-row">
+            <td class="vertical-table__text">renka shen</td>
+            <td class="vertical-table__text">my address</td>
+            <td class="vertical-table__text">Engineer</td>
+            <td class="vertical-table__text">
+              CSS design, CMS,CSS design, CMS,CSS design, CMS,CSS design,
+              CMS,CSS design, CMS,CSS design, CMS,CSS design, CMS,CSS design,
+              CMS,CSS design, CMS
+            </td>
+          </tr>
+
+          <tr class="vertical-table__body-row">
+            <td class="vertical-table__text">stroberry good</td>
+            <td class="vertical-table__text">my address</td>
+            <td class="vertical-table__text">Engineer</td>
+            <td class="vertical-table__text">
+              CSS design, CMS,CSS design, CMS,CSS design, CMS,CSS design,
+              CMS,CSS design, CMS,CSS design, CMS,CSS design, CMS,CSS design,
+              CMS,CSS design, CMS
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
+
+<style>
+  .vertical-table {
+    border: 1px solid #ddd;
+  }
+
+  .vertical-table__inner {
+    width: 100%;
+    text-align: center;
+    table-layout: fixed;
+  }
+
+  .vertical-table__header-row {
+    background-color: #efefef;
+  }
+
+  .vertical-table__header {
+    padding: 15px;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+    vertical-align: middle;
+  }
+
+  .vertical-table__text {
+    padding: 15px;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+  }
+
+  .vertical-table__header:last-child,
+  .vertical-table__text:last-child {
+    border-right-width: 0;
+  }
+
+  .vertical-table__body-row:last-child .vertical-table__text {
+    border-bottom-width: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    .vertical-table {
+      border-right-width: 0;
+      overflow-x: auto;
+    }
+
+    .vertical-table__inner {
+      width: auto;
+      min-width: 100%;
+    }
+
+    .vertical-table__header,
+    .vertical-table__text {
+      white-space: nowrap;
+    }
+
+    .vertical-table__header:last-child,
+    .vertical-table__text:last-child {
+      border-right-width: 1px;
+    }
+  }
+</style>
