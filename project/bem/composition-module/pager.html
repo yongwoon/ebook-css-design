@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/56017fa7f9.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="pager">
+      <ul class="pager__inner">
+        <li class="pager__item">
+          <a class="pager__link" href="#">
+            <i class="fas fa-angle-double-left"></i>
+          </a>
+        </li>
+
+        <li class="pager__item">
+          <a class="pager__link" href="#">
+            <i class="fas fa-angle-left"></i>
+          </a>
+        </li>
+
+        <li class="pager__item">
+          <span class="pager__link pager__link-active">1</span>
+        </li>
+
+        <li class="pager__item">
+          <a class="pager__link" href="#">2</a>
+        </li>
+
+        <li class="pager__item">
+          <a class="pager__link" href="#">3</a>
+        </li>
+
+        <li class="pager__item">
+          <a class="pager__link" href="#">
+            <i class="fas fa-angle-right"></i>
+          </a>
+        </li>
+
+        <li class="pager__item">
+          <a class="pager__link" href="#">
+            <i class="fas fa-angle-double-right"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
+
+<style>
+  .pager {
+    display: flex;
+    overflow-x: auto;
+  }
+  .pager__inner {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .pager__inner > *:last-child {
+    margin-right: 0;
+  }
+  .pager__item {
+    margin-right: 15px;
+
+    list-style-type: none;
+  }
+  .pager__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid currentColor;
+    color: #e25c00;
+    text-decoration: none;
+    transition: 0.25s;
+  }
+  .pager__link:focus,
+  .pager__link:hover {
+    background-color: #e25c00;
+    color: #fff;
+    opacity: 0.75;
+  }
+
+  /* 
+  active な要素に対する指定です。この pointer-events property を none に設定すると、
+  hover や focus, click の pointer 関連の event の対象がおとすることができます。
+  これにより、active 要素(今回は span 要素) に対する hover 時の CSS が適用されることを
+  事前に回避することができます。
+  */
+  .pager__link-active {
+    background-color: #e25c00;
+    color: #fff;
+    pointer-events: none;
+  }
+</style>
