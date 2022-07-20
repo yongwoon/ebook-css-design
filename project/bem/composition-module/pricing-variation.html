@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="price-table">
+      <table class="price-table__inner">
+        <thead class="price-table__headers">
+          <tr class="price-table__header-row">
+            <th>&nbsp;</th>
+            <th class="price-table__header">
+              <p class="price-table__header-title">STARTER</p>
+              <p class="price-table__price">
+                6,000<span class="price-table__price-unit">円/月</span>
+              </p>
+            </th>
+
+            <th class="price-table__header">
+              <p class="price-table__header-title">PRO</p>
+              <p class="price-table__price">
+                96,000<span class="price-table__price-unit">円/月</span>
+              </p>
+            </th>
+
+            <th class="price-table__header">
+              <p class="price-table__header-title">ENTERPRISE</p>
+              <p class="price-table__price">
+                384,000<span class="price-table__price-unit">円/月</span>
+              </p>
+            </th>
+          </tr>
+        </thead>
+
+        <tbody class="price-table__body">
+          <tr class="price-table__body-row">
+            <th class="price-table__body-title">
+              費用に含まれる<br class="only-md" />Contents 数
+            </th>
+            <td class="price-table__body-text">1,000件</td>
+            <td class="price-table__body-text">1,000件</td>
+            <td class="price-table__body-text">10,000件</td>
+          </tr>
+
+          <tr class="price-table__body-row">
+            <th class="price-table__body-title">
+              月間サイト<br class="only-md" />訪問者数
+            </th>
+            <td class="price-table__body-text">3,000</td>
+            <td class="price-table__body-text">無制限</td>
+            <td class="price-table__body-text">無制限</td>
+          </tr>
+
+          <tr class="price-table__body-row">
+            <th class="price-table__body-title">
+              月間 Eメール<br class="only-md" />送信数上限
+            </th>
+            <td class="price-table__body-text">最大コンタクト数の5倍</td>
+            <td class="price-table__body-text">最大コンタクト数の5倍</td>
+            <td class="price-table__body-text">最大コンタクト数の10倍</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
+
+<style>
+  .only-md {
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    .only-md {
+      display: block;
+    }
+  }
+
+  .price-table__inner {
+    width: 100%;
+    table-layout: fixed;
+  }
+  .price-table__header {
+    padding: 10px;
+    background-color: #e25c00;
+    border-right: 1px solid currentColor;
+    color: #fff;
+    text-align: center;
+  }
+  .price-table__header:last-child {
+    border-right-width: 0px;
+  }
+  .price-table__header-title {
+    font-size: 1.125rem;
+  }
+  .price-table__price {
+    font-size: 1.875rem;
+  }
+  .price-table__price-unit {
+    font-size: 1rem;
+  }
+  .price-table__body-title {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    font-weight: bold;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .price-table__body-text {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .price-table__body-text:last-child {
+    border-right: 1px solid #ddd;
+  }
+  .price-table__body-row:last-child .price-table__body-title,
+  .price-table__body-row:last-child .price-table__body-text {
+    border-bottom: 1px solid #ddd;
+  }
+
+  @media screen and (max-width: 768px) {
+    .price-table {
+      overflow-x: auto;
+    }
+    .price-table__inner {
+      width: auto;
+      white-space: nowrap;
+    }
+    .price-table__body-title {
+      position: -webkit-sticky; /* 左固定 */
+      position: sticky;
+      left: 0;
+      background-color: #fff;
+      /* border-right の代わりに box-shadow を使用 */
+      box-shadow: 1px 0 #ddd;
+      font-size: 0.875rem;
+    }
+  }
+</style>
