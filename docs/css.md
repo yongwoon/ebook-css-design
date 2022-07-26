@@ -101,3 +101,17 @@ img 要素や video 要素に適用が可能で、5 つの値があります。
   - 指定された割合になるように拡大・縮小される。適用ルールは `<length>` と同様
 
 ![background-size](./imgs/ch06-background-size.png)
+
+## VW
+
+1vw は viewport と紐づいた単位で、 1vw は viewport の横幅の 1% に一致します
+
+[ViewportScale の計算式](https://github.com/ixkaito/viewportscale)
+
+## 最大の cntent 幅を設定し、左右中央寄せるための指定
+
+```css
+max-width: 1230px;
+margin-right: auto;
+margin-left: auto;
+```

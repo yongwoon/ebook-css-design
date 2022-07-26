@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      class="bl_jumbotron"
+      style="
+        background-image: url('../../assets/img/elements/jumbotron-bg.jpg');
+      "
+    >
+      <div class="bl_jumbotron_inner ly_centered">
+        <p class="bl_jumbotron_ttl">
+          貴社のビジネスに適切な戦略をご提案し<br
+            class="only_lg"
+          />「成果」に貢献します。」
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+
+<style>
+  .ly_centered {
+    max-width: 1230px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media screen and (max-width: 768px) {
+    .only_lg {
+      display: none !important;
+    }
+  }
+  .bl_jumbotron {
+    height: calc(69.44444vw + -233.33333px);
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .bl_jumbotron_inner {
+    position: relative;
+    max-width: 1230px;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .bl_jumbotron_ttl {
+    position: absolute;
+    /* custom
+      top: 150px; 
+    */
+    top: 50%;
+    left: 0;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    font-size: calc(3.704vw -8.444px);
+    transform: translateY(-50%);
+  }
+
+  @media screen and (min-width: 1200px) {
+    .bl_jumbotron {
+      height: 600px;
+    }
+
+    .bl_jumbotron_ttl {
+      font-size: 2.25rem;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .bl_jumbotron {
+      height: 300px;
+    }
+    /* custom
+    .bl_jumbotron_inner {
+      margin-left: 0px;
+    }
+    */
+    .bl_jumbotron_ttl {
+      left: 50%;
+      width: 90%;
+      padding: 15px;
+      font-size: 1.25rem;
+      text-align: center;
+      transform: translate(-50%, -50%);
+    }
+  }
+</style>
