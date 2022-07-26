@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ol class="order-list">
+      <li class="order-list__item">web consulting</li>
+      <li class="order-list__item">digital marketing support</li>
+      <li class="order-list__item">CMS construction</li>
+      <li class="order-list__item">CSS design</li>
+    </ol>
+  </body>
+</html>
+
+<style>
+  /* 
+  CSS Counter
+  https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Counter_Styles/Using_CSS_counters
+  */
+  .order-list {
+    list-style-type: none;
+    counter-reset: order-list;
+  }
+
+  .order-list > *:last-child {
+    margin-bottom: 0;
+  }
+
+  .order-list__item {
+    position: relative;
+    padding-left: 1em;
+    margin-bottom: 10px;
+  }
+
+  .order-list__item::before {
+    content: counter(order-list) ". ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #e25c00;
+    font-weight: bold;
+    counter-increment: order-list;
+  }
+</style>

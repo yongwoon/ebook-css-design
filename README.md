@@ -29,6 +29,7 @@ CSS 設計完全ガイド
 - [CSS: position](https://saruwakakun.com/html-css/basic/relative-absolute-fixed)
 - [CSS property 対応状況の判断](https://caniuse.com/)
 - [Generage triangle css](http://apps.eky.hk/css-triangle-generator/)
+- [CSS Counter](https://developer.mozilla.org/ja/docs/Web/CSS/CSS_Counter_Styles/Using_CSS_counters)
 
 ### oocss
 
