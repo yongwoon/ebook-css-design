@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul class="bullet-list bullet-list--horizontal">
+      <li class="bullet-list__item">web consulting</li>
+      <li class="bullet-list__item">digital marketing support</li>
+      <li class="bullet-list__item">CMS construction</li>
+      <li class="bullet-list__item">CSS design</li>
+    </ul>
+  </body>
+</html>
+
+<style>
+  .bullet-list {
+    list-style-type: none;
+  }
+
+  .bullet-list > *:last-child {
+    margin-bottom: 0;
+  }
+
+  .bullet-list--horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: -10px;
+  }
+
+  .bullet-list--horizontal .bullet-list__item {
+    flex: calc(49% - 5px);
+    margin-right: 10px;
+  }
+
+  .bullet-list--horizontal .bullet-list__item:nth-of-type(even) {
+    margin-right: 0;
+  }
+
+  .bullet-list__item {
+    position: relative;
+    padding-left: 1em;
+    margin-bottom: 10px;
+  }
+
+  .bullet-list__item::before {
+    content: "";
+    position: absolute;
+    top: 0.5em;
+    left: 0;
+    display: block;
+    width: 0.4em;
+    height: 0.4em;
+    background-color: #e25c00;
+    border-radius: 50%;
+  }
+</style>
