@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="bl_horizTable bl_horizTable__mdScroll">
+      <table>
+        <tr>
+          <th>名前</th>
+          <td>Yongwoon Kim</td>
+        </tr>
+
+        <tr>
+          <th>所属</th>
+          <td>User Address</td>
+        </tr>
+
+        <tr>
+          <th>職類</th>
+          <td>Engineer</td>
+        </tr>
+
+        <tr>
+          <th>得意分野</th>
+          <td>
+            CSS 設計、CMS CSS 設計、CMSCSS 設計、CMSCSS 設計、CMSCSS
+            設計、CMSCSS 設計、CMSCSS 設計、CMSCSS 設計、CMSCSS 設計、CMS
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
+
+<style>
+  .bl_horizTable {
+    border: 1px solid #ddd;
+  }
+
+  .bl_horizTable table {
+    width: 100%;
+  }
+
+  .bl_horizTable th {
+    width: 20%;
+    padding: 15px;
+    background-color: #efefef;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+    vertical-align: middle;
+  }
+
+  .bl_horizTable td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .bl_horizTable tr:last-child th,
+  .bl_horizTable tr:last-child td {
+    border-bottom-width: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    .bl_horizTable.bl_horizTable__mdScroll {
+      border-right-width: 0; /* 右側の border を消す */
+      overflow-x: auto; /* 横 scroll */
+    }
+
+    .bl_horizTable.bl_horizTable__mdScroll th,
+    .bl_horizTable.bl_horizTable__mdScroll td {
+      white-space: nowrap;
+    }
+
+    .bl_horizTable.bl_horizTable__mdScroll td {
+      border-right: 1px solid #ddd;
+    }
+  }
+</style>

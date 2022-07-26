@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <dl class="bl_faq">
+      <dt class="bl_faq_q">
+        <span class="bl_faq_icon">Q</span>
+        <span class="bl_faq_q_txt"> どのようなCMS開発の実績がありますか? </span>
+      </dt>
+
+      <dt class="bl_faq_a">
+        <span class="bl_faq_icon">A</span>
+        <div class="bl_faq_a_body">
+          <p class="bl_faq_a_txt">
+            WordPress, Movable Type, Huspot CMS,
+            Sitecoreの開発実績がございます。
+          </p>
+        </div>
+        <!-- bl_faq_a_body -->
+      </dt>
+
+      <dt class="bl_faq_q">
+        <span class="bl_faq_icon">Q</span>
+        <span class="bl_faq_q_txt"> どのようなCMS開発の実績がありますか? </span>
+      </dt>
+
+      <dt class="bl_faq_a">
+        <span class="bl_faq_icon">A</span>
+        <div class="bl_faq_a_body">
+          <p class="bl_faq_a_txt">
+            WordPress, Movable Type, Huspot CMS,
+            Sitecoreの開発実績がございます。
+          </p>
+        </div>
+        <!-- bl_faq_a_body -->
+      </dt>
+    </dl>
+  </body>
+</html>
+
+<style>
+  .bl_faq {
+    /* css-wipeではスタイリングなし */
+  }
+
+  .bl_faq > *:last-child {
+    margin-bottom: 0;
+  }
+
+  /*
+  position:relative は Q と A の icon を配置するために 
+  position:absolute を使用する
+  */
+  .bl_faq_q,
+  .bl_faq_a {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    box-sizing: content-box;
+    min-height: 45px;
+    padding-left: 60px;
+  }
+
+  .bl_faq_q {
+    margin-bottom: 15px;
+    font-size: 1.125rem;
+    font-weight: bold;
+  }
+
+  .bl_faq_q_txt {
+    padding-top: 12px;
+  }
+
+  .bl_faq_a {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .bl_faq_icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-weight: normal;
+    line-height: 45px;
+    text-align: center;
+  }
+
+  .bl_faq_q .bl_faq_icon {
+    background-color: #e25c00;
+    color: #fff;
+  }
+
+  .bl_faq_a .bl_faq_icon {
+    background: #efefef;
+    color: #e25c00;
+  }
+
+  .bl_faq_a_body {
+    /* padding-top: 12px; */
+    padding-bottom: 20px;
+    line-height: 1;
+  }
+
+  .bl_faq_a_body > *:last-child {
+    margin-bottom: 0;
+  }
+
+  .bl_faq_a_txt {
+    margin-bottom: 20px;
+  }
+</style>

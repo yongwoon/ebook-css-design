@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="accordion">
+      <dt class="accordion__title">
+        <button class="accordion__btn" type="button">
+          どのようなCMS開発の実績がありますか？
+        </button>
+      </dt>
+
+      <dd class="accordion__body">
+        <p class="accordion__text">
+          WordPress, Movable Type, HubSpot CMS, Sitecore
+          の開発実績がございます。
+        </p>
+      </dd>
+
+      <!-- 以下はコンテンツが開いた状態 -->
+      <dt class="accordion__title">
+        <button class="accordion__btn accordion__btn--active" type="button">
+          どのようなCMS開発の日星機がありますか?
+        </button>
+      </dt>
+
+      <dd class="accordion__body accordion__body--active">
+        <p class="accordion__text">
+          WordPress, Movable Type, HubSpot CMS, Sitecore
+          の開発実績がございます。
+        </p>
+      </dd>
+    </div>
+  </body>
+</html>
+
+<style>
+  .accordion__body + .accordion__title {
+    margin-top: 20px;
+  }
+
+  .accordion__btn {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    background-color: #e25c00;
+    border: 2px solid #e25c00;
+    color: #fff;
+    font-size: 1.125rem;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.25s;
+  }
+
+  .accordion__btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: currentColor;
+    transform: translateY(-50%);
+  }
+
+  .accordion__btn::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    display: block;
+    width: 2px;
+    height: 20px;
+    background-color: currentColor;
+    transform: translateY(-50%);
+  }
+
+  .accordion__btn:focus,
+  .accordion__btn:hover {
+    background-color: #fff;
+    color: #e25c00;
+  }
+
+  .accordion__btn--active::after {
+    content: none;
+  }
+
+  .accordion__body {
+    display: none;
+    padding: 15px;
+    border: 1px solid #ddd;
+  }
+  .accordion__body > *:last-child {
+    margin-bottom: 0;
+  }
+  .accordion__body--active {
+    display: block;
+  }
+  .accordion__text {
+    margin-bottom: 20px;
+  }
+</style>

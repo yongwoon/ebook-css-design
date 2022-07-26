@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul class="bl_bulletList bl_bulletList__horiz">
+      <li>web consulting</li>
+      <li>digital marketing support</li>
+      <li>CMS construction</li>
+      <li>CSS design</li>
+    </ul>
+  </body>
+</html>
+
+<style>
+  .bl_bulletList {
+    list-style-type: none;
+  }
+
+  .bl_bulletList > *:last-child {
+    margin-bottom: 0;
+  }
+
+  .bl_bulletList.bl_bulletList__horiz {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: -10px;
+  }
+
+  .bl_bulletList.bl_bulletList__horiz > li {
+    flex: calc(49% - 5px);
+    margin-right: 10px;
+  }
+
+  .bl_bulletList.bl_bulletList__horiz > li:nth-of-type(even) {
+    margin-right: 0;
+  }
+
+  .bl_bulletList > li {
+    position: relative;
+    padding-left: 1em;
+    margin-bottom: 10px;
+  }
+
+  .bl_bulletList > li::before {
+    content: "";
+    position: absolute;
+    top: 0.5em;
+    left: 0;
+    display: block;
+    width: 0.4em;
+    height: 0.4em;
+    background-color: #e25c00;
+    border-radius: 50%;
+  }
+</style>

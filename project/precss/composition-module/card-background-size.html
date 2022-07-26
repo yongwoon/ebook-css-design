@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="bl_card">
+      <div
+        class="bl_card_imgWrapper"
+        style="
+          background-image: url(http://placehold.jp/1000x200.png?text=1000px*200px);
+        "
+      ></div>
+
+      <div class="bl_card_body">
+        <h3 class="bl_card_ttl">webサイト制作</h3>
+        <p class="bl_card_txt">
+          ユーザーにベストな体験を提供するクリエイティブとテクノロジーを作り上げます。
+        </p>
+      </div>
+      <!-- <!/.bl_card_body> -->
+    </div>
+    <!-- <!/.bl_card> -->
+  </body>
+</html>
+
+<style>
+  .bl_card {
+    box-shadow: 0 3px 6px rgba (0, 0, 0, 0.16);
+  }
+
+  /*
+  position: relative; ですが、これは `bl_card_imgWrapper > img`で `position: absolute;`
+  を使用するため、画像の起点がこの要素となるよう指定しています。
+  */
+  .bl_card_imgWrapper {
+    position: relative;
+    padding-top: 56.25%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto; /* contain / cover / auto */
+  }
+
+  .bl_card_body {
+    padding: 15px;
+  }
+
+  .bl_card_body > *:last-child {
+    margin-bottom: 0;
+  }
+
+  .bl_card_ttl {
+    margin-bottom: 5px;
+    font-size: 1.125rem;
+    font-weight: bold;
+  }
+
+  .bl_card_txt {
+    color: #777;
+  }
+</style>

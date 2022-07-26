@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul class="bl_priceUnit">
+      <li class="bl_price">
+        <div class="bl_price_header">
+          <p class="bl_price_ttl">STARTER</p>
+          <p class="bl_price_price">6,000<span>円/月</span></p>
+        </div>
+
+        <div class="bl_price_body">
+          <p class="bl_price_lead">
+            初めてインバウンドマーケティングを行う企業向けのスタートアッププラン
+          </p>
+
+          <dl class="bl_price_features">
+            <dt>費用に含まれるコンタクト数</dt>
+            <dd>1,000件</dd>
+
+            <dt>月間サイト訪問者数</dt>
+            <dd>3,000</dd>
+
+            <dt>月間Eメール送信数上限</dt>
+            <dd>最大コンタクト数の5倍</dd>
+          </dl>
+        </div>
+      </li>
+
+      <li class="bl_price">
+        <div class="bl_price_header">
+          <p class="bl_price_ttl">PRO</p>
+          <p class="bl_price_price">96,000<span>円/月</span></p>
+        </div>
+
+        <div class="bl_price_body">
+          <p class="bl_price_lead">
+            初めてインバウンドマーケティングを行う企業向けのスタートアッププラン
+          </p>
+
+          <dl class="bl_price_features">
+            <dt>費用に含まれるコンタクト数</dt>
+            <dd>1,000件</dd>
+
+            <dt>月間サイト訪問者数</dt>
+            <dd>3,000</dd>
+
+            <dt>月間Eメール送信数上限</dt>
+            <dd>最大コンタクト数の5倍</dd>
+          </dl>
+        </div>
+      </li>
+
+      <li class="bl_price">
+        <div class="bl_price_header">
+          <p class="bl_price_ttl">ENTERPRISE</p>
+          <p class="bl_price_price">964,000<span>円/月</span></p>
+        </div>
+
+        <div class="bl_price_body">
+          <p class="bl_price_lead">
+            初めてインバウンドマーケティングを行う企業向けのスタートアッププラン
+          </p>
+
+          <dl class="bl_price_features">
+            <dt>費用に含まれるコンタクト数</dt>
+            <dd>1,000件</dd>
+
+            <dt>月間サイト訪問者数</dt>
+            <dd>3,000</dd>
+
+            <dt>月間Eメール送信数上限</dt>
+            <dd>最大コンタクト数の5倍</dd>
+          </dl>
+        </div>
+      </li>
+    </ul>
+  </body>
+</html>
+
+<style>
+  .bl_priceUnit {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .bl_price {
+    list-style-type: none;
+  }
+
+  /*
+  flex: 1
+  各 plan を均等幅で表示するための指定です。`flex: 1`は short-hand で、値が一つだけで
+  単位がない場合は `flex-grow` に対する指定となるのでした。
+  すなわち、ここの指定は `flex-grow: 1` を意味します
+  */
+  .bl_priceUnit .bl_price {
+    flex: 1;
+    margin-right: 2.43902%;
+  }
+
+  .bl_priceUnit .bl_price:last-child {
+    margin-right: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    .bl_priceUnit {
+      display: block;
+    }
+    .bl_priceUnit .bl_price {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+    .bl_priceUnit .bl_price:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .bl_price {
+    border: 1px solid #ddd;
+  }
+  .bl_price_header {
+    padding: 10px;
+    background-color: #e25c00;
+    color: #fff;
+    text-align: center;
+  }
+  .bl_price_ttl {
+    font-size: 1.125rem;
+  }
+  .bl_price_price {
+    font-size: 1.875rem;
+  }
+  .bl_price_price span {
+    font-size: 1rem;
+  }
+  .bl_price_body {
+    padding: 15px;
+  }
+  .bl_price_body > *:last-child {
+    margin-bottom: 0;
+  }
+  .bl_price_lead {
+    margin-bottom: 20px;
+  }
+  .bl_price_features {
+    text-align: center;
+  }
+  .bl_price_features > *:last-child {
+    margin-bottom: 0;
+  }
+  .bl_price_features dt {
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: #efefef;
+  }
+  .bl_price_features dd {
+    margin-bottom: 20px;
+  }
+</style>

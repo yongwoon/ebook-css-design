@@ -58,3 +58,60 @@ https://fontawesome.com/icons/arrow-right?style=solid&s=solid
   transform: translateY(-50%);
 }
 ```
+
+## object-fit
+
+img 要素や video 要素に適用が可能で、5 つの値があります。
+
+- contain
+  - aspect 比を維持したまま、表示領域に収まるように拡大・縮小される
+- cover
+  - aspect 比を維持したまま、表裏領域全体を埋めるように拡大・縮小される
+- fill
+  - aspect 比を無視して、表示領域全体を埋めるように引き伸ばされる
+- none
+  - 拡大・縮小を行わない
+- scale-down
+  - contain または none から、実際の size が小さくなる方を採用する
+
+![over-fit](./imgs/ch6-overfit.png)
+
+## background-size
+
+背景画像の siz を調整するための property です。
+
+- 表示したい画像を破池画像として設定する必要があるため、HTML の構造に変更が必要になります。
+- また、背景画像として設定する、即ち img 要素を使わないため、 machine readable ではありません。
+  - machine readable ??
+    - 検索エンジンの crawer や、browser が 「content」 として認識できる状態のことです。
+- SEO や accessibility の担保においては若干 minus となるため、`background-size` property の手法を採用する際には「content として認識されなくても問題ないか」をよく確認しましょう。
+
+### property
+
+- contain
+  - aspect 比を維持したまま、表示領域に収まるように拡大・縮小される
+- cover
+  - aspect 比を維持したまま、表裏領域全体を埋めるように拡大・縮小される
+- auto
+  - aspect 比が維持されるように、適切は方向に拡大・縮小される
+- `<length>`
+  - 指定された長さになるように拡大・縮小される値が一つだけの場合は横幅に対する指定となり、高さは auto となる。
+  - 値が２つの場合は、横幅・高さの順に値が適用される。複数の値は半額 space で区切る
+- `<percentage>`
+  - 指定された割合になるように拡大・縮小される。適用ルールは `<length>` と同様
+
+![background-size](./imgs/ch06-background-size.png)
+
+## VW
+
+1vw は viewport と紐づいた単位で、 1vw は viewport の横幅の 1% に一致します
+
+[ViewportScale の計算式](https://github.com/ixkaito/viewportscale)
+
+## 最大の cntent 幅を設定し、左右中央寄せるための指定
+
+```css
+max-width: 1230px;
+margin-right: auto;
+margin-left: auto;
+```

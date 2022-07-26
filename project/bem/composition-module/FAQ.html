@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <dl class="faq">
+      <dt class="faq__row faq__row--question">
+        <span class="faq__icon faq__icon--question">Q</span>
+        <span class="faq__question-text">
+          どのようなCMS開発の実績がありますか?
+        </span>
+      </dt>
+
+      <dt class="faq__row faq__row--answer">
+        <span class="faq__icon faq__icon--answer">A</span>
+
+        <div class="faq__answer-body">
+          <p class="faq__answer-text">
+            WordPress, Movable Type, Huspot CMS,
+            Sitecoreの開発実績がございます。
+          </p>
+        </div>
+      </dt>
+      <!-- ---------------------------------- -->
+      <dt class="faq__row faq__row--question">
+        <span class="faq__icon faq__icon--question">Q</span>
+        <span class="faq__question-text">
+          どのようなCMS開発の実績がありますか?
+        </span>
+      </dt>
+
+      <dt class="faq__row faq__row--answer">
+        <span class="faq__icon faq__icon--answer">A</span>
+
+        <div class="faq__answer-body">
+          <p class="faq__answer-text">
+            WordPress, Movable Type, Huspot CMS,
+            Sitecoreの開発実績がございます。
+          </p>
+        </div>
+        <!-- faq__answer-body -->
+      </dt>
+    </dl>
+  </body>
+</html>
+
+<style>
+  .faq {
+    /* css-wipeではスタイリングなし */
+  }
+
+  .faq > *:last-child {
+    margin-bottom: 0;
+  }
+
+  /*
+  position:relative は Q と A の icon を配置するために 
+  position:absolute を使用する
+  */
+  .faq__row {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    box-sizing: content-box;
+    min-height: 45px;
+    padding-left: 60px;
+  }
+
+  .faq__row--question {
+    margin-bottom: 15px;
+    font-size: 1.125rem;
+    font-weight: bold;
+  }
+
+  .faq__question-text {
+    padding-top: 12px;
+  }
+
+  .faq__row--answer {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .faq__icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-weight: normal;
+    line-height: 45px;
+    text-align: center;
+  }
+
+  .faq__icon--question {
+    background-color: #e25c00;
+    color: #fff;
+  }
+
+  .faq__icon--answer {
+    background: #efefef;
+    color: #e25c00;
+  }
+
+  .faq__answer-body {
+    /* padding-top: 12px; */
+    padding-bottom: 20px;
+    line-height: 1;
+  }
+
+  .faq__answer-body > *:last-child {
+    margin-bottom: 0;
+  }
+
+  .faq__answer-text {
+    margin-bottom: 20px;
+  }
+</style>

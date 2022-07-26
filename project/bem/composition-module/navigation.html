@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="tab-navigation">
+      <ul class="tab-navigation__inner">
+        <li class="tab-navigation__item">
+          <span class="tab-navigation__link tab-navigation__link--active">
+            契約・手続きについて
+          </span>
+        </li>
+
+        <li class="tab-navigation__item">
+          <a class="tab-navigation__link" href="#">製品について</a>
+        </li>
+
+        <li class="tab-navigation__item">
+          <a class="tab-navigation__link" href="#">キャンペーンについて</a>
+        </li>
+
+        <li class="tab-navigation__item">
+          <a class="tab-navigation__link" href="#">会員機能について</a>
+        </li>
+
+        <li class="tab-navigation__item">
+          <a class="tab-navigation__link" href="#">各種お手続きについて</a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
+
+<style>
+  .tab-navigation__inner {
+    display: flex;
+    align-items: center;
+    flex-wrap: center;
+    justify-content: center;
+    margin-bottom: -10px;
+
+    list-style-type: none;
+  }
+
+  .tab-navigation__link {
+    display: inline-block;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    border-bottom: 4px solid #efefef;
+    color: #777;
+    text-decoration: none;
+    transition: 0.25s;
+  }
+
+  .tab-navigation__link:focus,
+  .tab-navigation__link:hover {
+    border-bottom-color: currentColor;
+    color: #e25c00;
+    opacity: 0.75;
+  }
+
+  .tab-navigation__link--active {
+    border-bottom-color: currentColor;
+    color: #e25c00;
+    pointer-events: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    .tab-navigation {
+      overflow-x: auto;
+    }
+
+    .tab-navigation__inner {
+      flex-wrap: nowrap; /* 折り返しを解除 */
+      justify-content: flex-start;
+      margin-bottom: 0;
+      white-space: nowrap;
+    }
+  }
+</style>

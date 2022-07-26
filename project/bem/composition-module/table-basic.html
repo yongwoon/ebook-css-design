@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="horizontal-table horizontal-table--md-scroll">
+      <table class="horizontal-table__inner">
+        <tbody class="horizontal-table__body">
+          <tr class="horizontal-table__row">
+            <th class="horizontal-table__header">名前</th>
+            <td class="horizontal-table__text">Yongwoon Kim</td>
+          </tr>
+
+          <tr class="horizontal-table__row">
+            <th class="horizontal-table__header">所属</th>
+            <td class="horizontal-table__text">User Address</td>
+          </tr>
+
+          <tr class="horizontal-table__row">
+            <th class="horizontal-table__header">職類</th>
+            <td class="horizontal-table__text">Engineer</td>
+          </tr>
+
+          <tr class="horizontal-table__row">
+            <th class="horizontal-table__header">得意分野</th>
+            <td class="horizontal-table__text">
+              CSS 設計、CMS.CSS 設計、CMS.CSS 設計、CMS.CSS 設計、CMS.CSS
+              設計、CMS.CSS 設計、CMS.CSS 設計、CMS.CSS 設計、CMS.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
+
+<style>
+  .horizontal-table {
+    border: 1px solid #ddd;
+  }
+  .horizontal-table__inner {
+    width: 100%;
+  }
+  .horizontal-table__header {
+    width: 20%;
+    padding: 15px;
+    background-color: #efefef;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+    vertical-align: middle;
+  }
+  .horizontal-table__text {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  .horizontal-table__row:last-child .horizontal-table__header,
+  .horizontal-table__row:last-child .horizontal-table__text {
+    border-bottom-width: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    .horizontal-table--md-scroll {
+      border-right-width: 0; /* 右側の border を消す */
+      overflow-x: auto; /* 横 scroll */
+    }
+
+    .horizontal-table--md-scroll .horizontal-table__header,
+    .horizontal-table--md-scroll .horizontal-table__text {
+      white-space: nowrap;
+    }
+
+    .horizontal-table--md-scroll .horizontal-table__text {
+      border-right: 1px solid #ddd;
+    }
+  }
+</style>
