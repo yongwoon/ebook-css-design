@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul class="vertical-posts">
+      <li class="vertical-posts__item">
+        <div class="vertical-posts__header">
+          <time class="vertical-posts__date" datetime="2019-03-29">
+            2019/03/29
+          </time>
+
+          <ul class="vertical-posts__labels">
+            <li class="vertical-posts__label">
+              <span class="label">海外向けマーケティング</span>
+            </li>
+          </ul>
+        </div>
+
+        <a class="vertical-posts__title" href="#">
+          【多言語サイトを構築する】①対象言語・地域とURL方式の選定
+        </a>
+      </li>
+    </ul>
+  </body>
+</html>
+
+<style>
+  .vertical-posts__header > *:last-child {
+    margin-right: 0;
+  }
+
+  .vertical-posts__date {
+    margin-right: 10px;
+  }
+
+  .vertical-posts__labels {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-bottom: -10px;
+  }
+
+  .vertical-posts__labels > *:last-child {
+    margin-right: 0;
+  }
+
+  .vertical-posts__label {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+</style>

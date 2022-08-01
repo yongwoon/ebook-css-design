@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul class="bl_vertPosts">
+      <li class="bl_vertPosts_item">
+        <div class="bl_vertPosts_header">
+          <time class="bl_vertPosts_date" datetime="2019-03-29">
+            2019/03/29
+          </time>
+
+          <ul class="bl_vertPosts_labels">
+            <li>
+              <span class="el_label">海外向けマーケティング</span>
+              <span class="el_label el_label__yellow">お役立ちツール</span>
+
+              <!-- Refactoring -->
+              <!-- <span class="el_label" data-text="{{ tag_name }}">
+                {{ tag_name }}
+              </span> -->
+            </li>
+          </ul>
+        </div>
+
+        <a class="bl_vertPosts_ttl" href="#">
+          【多言語サイトを構築する】①対象言語・地域とURL方式の選定
+        </a>
+      </li>
+    </ul>
+  </body>
+</html>
+
+<style>
+  .bl_vertPosts_header > *:last-child {
+    margin-right: 0;
+  }
+
+  .bl_vertPosts_date {
+    margin-right: 10px;
+  }
+
+  .bl_vertPosts_labels {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-bottom: -10px;
+  }
+
+  .bl_vertPosts_labels > *:last-child {
+    margin-right: 0;
+  }
+
+  .el_label {
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    background-color: #e25c00;
+    color: #fff;
+  }
+
+  .el_label.el_label__yellow,
+  .el_label[data-text="お役立ちツール"] {
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    background-color: #f1de00;
+    color: #000;
+  }
+
+  .el_label.el_label__blue,
+  .el_label[data-text="アクセス分析"] {
+    background-color: blue;
+  }
+</style>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="half-media">
+      <figure class="half-media__img-wrapper">
+        <img
+          class="half-media__img"
+          src="../assets/img/elements/persona.jpg"
+          alt="写真: 手に持たれたスマホ"
+        />
+      </figure>
+
+      <div class="half-media__body">
+        <h3 class="half-media__title">ユーザーを考えた設計で満足な体験を</h3>
+
+        <p class="half-media__text">
+          提供するサービスやペルソナによって、 web
+          サイトの設計は異なります。サービスやペルソナに合わせた設計を行うことにより、訪問者にストレスのないより良い体験を生み出し、満足を高めることとなります。<br />
+          わたしたちはお客さまのサイトにあったユーザービリティを考えるため、分析やヒアリングをきめ細かく実施、満足を体験できるクリエイティブとテクノロジーを設計・構築し、今までなにない機体を超えたユーザー体験を提供いたします。
+        </p>
+
+        <a class="half-media__button btn btn--arrow-right" href="#"
+          >戦略策定サービスについて</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
+
+<style>
+  .half-media__text {
+    margin-bottom: 20px;
+  }
+
+  .half-media__body > *:last-child {
+    margin-bottom: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    .half-media__button {
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  .btn {
+    display: inline-block;
+    width: 300px;
+    max-width: 100%;
+    padding: 20px 10px;
+    background-color: #e25c00;
+    border: 2px solid transparent;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    color: #fff;
+    font-size: 1.125rem;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.25s;
+  }
+
+  /*
+  currentColor
+  - その要素事態に color property  の値が設定されていれば、その値
+  - なければ、直近の親要素の color property の値
+  を継承します。今回は hover 時の color propert 「#e25c00」を指定していますので、
+  hover color もこの 「#e25c00」 が適用されます
+  */
+  .btn:focus,
+  .btn:hover {
+    background-color: #fff;
+    border-color: currentColor;
+    color: #e25c00;
+  }
+
+  .btn--arrow-right {
+    position: relative;
+    padding-right: 2em;
+    padding-left: 1.38em;
+  }
+</style>
