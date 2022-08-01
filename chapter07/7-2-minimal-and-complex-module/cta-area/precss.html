@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="bl_cta">
+      <h2 class="bl_cta_ttl">機嫌にお問合せください</h2>
+
+      <p class="bl_cta_txt">
+        弊社のサービスや製品のことできになることがございましたら、お機嫌にお問合せください
+      </p>
+      <a class="el_btn" href="#">問い合わせする</a>
+    </div>
+  </body>
+</html>
+
+<style>
+  .bl_cta_txt {
+    margin-bottom: 40px;
+  }
+
+  .el_btn {
+    display: inline-block;
+    width: 300px;
+    max-width: 100%;
+    padding: 20px 10px;
+    background-color: #e25c00;
+    border: 2px solid transparent;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    color: #fff;
+    font-size: 1.125rem;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.25s;
+  }
+
+  /*
+  currentColor
+  - その要素事態に color property  の値が設定されていれば、その値
+  - なければ、直近の親要素の color property の値
+  を継承します。今回は hover 時の color propert 「#e25c00」を指定していますので、
+  hover color もこの 「#e25c00」 が適用されます
+  */
+  .el_btn:focus,
+  .el_btn:hover {
+    background-color: #fff;
+    border-color: currentColor;
+    color: #e25c00;
+  }
+
+  .el_btn--arrow-right {
+    position: relative;
+    padding-right: 2em;
+    padding-left: 1.38em;
+  }
+</style>

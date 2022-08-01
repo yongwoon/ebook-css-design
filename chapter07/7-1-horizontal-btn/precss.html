@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul class="bl_horizBtnList">
+      <li>
+        <a class="el_btn btn__warning" href="#">戻る</a>
+      </li>
+
+      <li>
+        <a class="el_btn" href="#">進む</a>
+      </li>
+    </ul>
+  </body>
+</html>
+
+<style>
+  .bl_horizBtnList {
+    display: flex;
+    justify-content: center;
+
+    list-style-type: none;
+  }
+
+  .bl_horizBtnList > *:last-child {
+    margin-right: 0;
+  }
+
+  .bl_horizBtnList > li {
+    flex: 1 1 0;
+    max-width: 300px;
+    margin-right: 20px;
+  }
+
+  .bl_horizBtnList .el_btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* ---------------- */
+  .el_btn {
+    display: inline-block;
+    width: 300px;
+    max-width: 100%;
+    padding: 20px 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .btn__warning {
+    background-color: #f1de00;
+    color: #222;
+  }
+
+  .btn__warning:focus,
+  .btn__warning:hover {
+    border-color: #f1de00;
+    color: #222;
+  }
+</style>
