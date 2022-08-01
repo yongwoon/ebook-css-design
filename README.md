@@ -62,6 +62,15 @@ CSS 設計完全ガイド
 
 - [理解しておきたい、CSS によるインラインレイアウトの仕組み（font-size／line-height 編）Inline Layout─Frontrend Conference](https://html5experts.jp/takazudo/13339/)
 
+### Style Guide Generator (ch08)
+
+- [fractal](https://fractal.build/)
+- [SC5](http://styleguide.sc5.io/)
+- [kss-node](https://kssnode.github.io/kssnode/)
+- [Atomic Docs](http://atomicdocs.io/)
+- [Stylemark](https://github.com/nextbigsoundinc/stylemark)
+- [storybook](https://storybook.js.org/)
+
 ## TODO
 
 ### 検索
